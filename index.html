@@ -1,0 +1,2486 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://www.qricle.com/xmlrpc.php" />
+	<title>Qricle - Guest Interactions Management System</title>
+	<link rel="canonical" href="https://qricle.com" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<meta name='robots' content='max-image-preview:large' />
+	<link rel='dns-prefetch' href='//s.w.org' />
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+	<script type="text/javascript">
+		window._wpemojiSettings = {
+			"baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/",
+			"ext": ".png",
+			"svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/",
+			"svgExt": ".svg",
+			"source": {
+				"concatemoji": "https:\/\/www.qricle.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.5"
+			}
+		};
+		/*! This file is auto-generated */
+		! function (e, a, t) {
+			var n, r, o, i = a.createElement("canvas"),
+				p = i.getContext && i.getContext("2d");
+
+			function s(e, t) {
+				var a = String.fromCharCode;
+				p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0);
+				e = i.toDataURL();
+				return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL()
+			}
+
+			function c(e) {
+				var t = a.createElement("script");
+				t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
+			}
+			for (o = Array("flag", "emoji"), t.supports = {
+					everything: !0,
+					everythingExceptFlag: !0
+				}, r = 0; r < o.length; r++) t.supports[o[r]] = function (e) {
+				if (!p || !p.fillText) return !1;
+				switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
+					case "flag":
+						return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356,
+							56819
+						], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128,
+							56430, 56128, 56423, 56128, 56447
+						], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128,
+							56423, 8203, 56128, 56447
+						]);
+					case "emoji":
+						return !s([10084, 65039, 8205, 55357, 56613], [10084, 65039, 8203, 55357, 56613])
+				}
+				return !1
+			}(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag =
+				t.supports.everythingExceptFlag && t.supports[o[r]]);
+			t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback =
+				function () {
+					t.DOMReady = !0
+				}, t.supports.everything || (n = function () {
+					t.readyCallback()
+				}, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent(
+					"onload", n), a.attachEvent("onreadystatechange", function () {
+					"complete" === a.readyState && t.readyCallback()
+				})), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji)))
+		}(window, document, window._wpemojiSettings);
+	</script>
+	<style type="text/css">
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 0.07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min.css' type='text/css'
+	    media='all' />
+	<style id='global-styles-inline-css' type='text/css'>
+		body {
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #ffffff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+			--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+			--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+			--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+			--wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+			--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+			--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+			--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+			--wp--preset--font-size--small: 13px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 36px;
+			--wp--preset--font-size--x-large: 42px;
+		}
+
+		body {
+			margin: 0;
+		}
+
+		.wp-site-blocks>.alignleft {
+			float: left;
+			margin-right: 2em;
+		}
+
+		.wp-site-blocks>.alignright {
+			float: right;
+			margin-left: 2em;
+		}
+
+		.wp-site-blocks>.aligncenter {
+			justify-content: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}
+	</style>
+	<link rel='stylesheet' id='contact-form-7-css' href='wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css'
+	    media='all' />
+	<style id='pix-intro-handle-inline-css' type='text/css'>
+		body:not(.render) .pix-overlay-item {
+			opacity: 0 !important;
+		}
+
+		body:not(.pix-loaded) .pix-wpml-header-btn {
+			opacity: 0;
+		}
+
+		html:not(.render) {
+			background: #FFFFFF !important;
+		}
+
+		.pix-page-loading-bg:after {
+			content: " ";
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			display: block;
+			background: #FFFFFF !important;
+			pointer-events: none;
+			transform-style: flat;
+			transform: scaleX(1);
+			transition: transform .2s cubic-bezier(.27, .76, .38, .87);
+			transform-origin: right center;
+			z-index: 99999999999999999999;
+		}
+
+		body.render .pix-page-loading-bg:after {
+			transform: scaleX(0);
+			transform-origin: left center;
+		}
+	</style>
+	<link rel='stylesheet' id='essentials-bootstrap-css' href='wp-content/themes/essentials/inc/scss/bootstrap.min.css' type='text/css'
+	    media='all' />
+	<link rel='stylesheet' id='elementor-icons-css' href='wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css'
+	    type='text/css' media='all' />
+	<link rel='stylesheet' id='elementor-frontend-css' href='wp-content/plugins/elementor/assets/css/frontend-lite.min.css' type='text/css'
+	    media='all' />
+	<link rel='stylesheet' id='elementor-post-6-css' href='wp-content/uploads/elementor/css/post-6.css' type='text/css' media='all'
+	/>
+	<link rel='stylesheet' id='elementor-global-css' href='wp-content/uploads/elementor/css/global.css' type='text/css' media='all'
+	/>
+	<link rel='stylesheet' id='elementor-post-3205-css' href='wp-content/uploads/elementor/css/post-3205.css' type='text/css'
+	    media='all' />
+	<link rel='stylesheet' id='pixfort-map-style-css' href='wp-content/plugins/pixfort-core/functions/css/elements/css/map.min.css'
+	    type='text/css' media='all' />
+	<link rel='stylesheet' id='pix-flickity-style-css' href='wp-content/themes/essentials/css/build/flickity.min.css' type='text/css'
+	    media='all' />
+	<link rel='stylesheet' id='essentials-pixicon-font-css' href='wp-content/themes/essentials/css/build/pixicon-main/style.min.css'
+	    type='text/css' media='all' />
+	<link rel='stylesheet' id='pix-popups-style-css' href='wp-content/themes/essentials/css/jquery-confirm.min.css' type='text/css'
+	    media='all' />
+	<link rel='stylesheet' id='essentials-select-css-css' href='wp-content/themes/essentials/css/build/bootstrap-select.min.css'
+	    type='text/css' media='all' />
+	<link rel='stylesheet' id='pix-essentials-style-2-css' href='wp-content/uploads/wp-scss-cache/pix-essentials-style-2.css'
+	    type='text/css' media='all' />
+	<link rel='stylesheet' id='ms-main-css' href='wp-content/plugins/masterslider/public/assets/css/masterslider.main.css' type='text/css'
+	    media='all' />
+	<link rel='stylesheet' id='ms-custom-css' href='wp-content/uploads/masterslider/custom.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='google-fonts-1-css' href='//fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=5.9.5'
+	    type='text/css' media='all' />
+	<script type='text/javascript' src='wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+	<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+	<script type='text/javascript' src='wp-content/plugins/masterslider/includes/modules/elementor/assets/js/elementor-widgets.js'
+	    id='masterslider-elementor-widgets-js'></script>
+	<link rel="https://api.w.org/" href="https://www.qricle.com/wp-json/" />
+	<link rel='shortlink' href='index.html' />
+	<script>
+		var ms_grabbing_curosr =
+			'https://www.qricle.com/wp-content/plugins/masterslider/public/assets/css/common/grabbing.cur',
+			ms_grab_curosr = 'https://www.qricle.com/wp-content/plugins/masterslider/public/assets/css/common/grab.cur';
+	</script>
+	<meta name="generator" content="MasterSlider 3.6.1 - Responsive Touch Image Slider" />
+	<meta name="generator" content="Powered by Slider Revolution 6.5.31 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."
+	/>
+	<script>
+		function setREVStartSize(e) {
+			//window.requestAnimationFrame(function() {
+			window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+			window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+			try {
+				var pw = document.getElementById(e.c).parentNode.offsetWidth,
+					newh;
+				pw = pw === 0 || isNaN(pw) || (e.l == "fullwidth" || e.layout == "fullwidth") ? window.RSIW : pw;
+				e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+				e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+				e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+				e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+				e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+				e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+				e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
+				if (e.layout === "fullscreen" || e.l === "fullscreen")
+					newh = Math.max(e.mh, window.RSIH);
+				else {
+					e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+					for (var i in e.rl)
+						if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+					e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+					e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+					for (var i in e.rl)
+						if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+					var nl = new Array(e.rl.length),
+						ix = 0,
+						sl;
+					e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+					e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+					e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+					e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+					for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+					sl = nl[0];
+					for (var i in nl)
+						if (sl > nl[i] && nl[i] > 0) {
+							sl = nl[i];
+							ix = i;
+						}
+					var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
+					newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
+				}
+				var el = document.getElementById(e.c);
+				if (el !== null && el) el.style.height = newh + "px";
+				el = document.getElementById(e.c + "_wrapper");
+				if (el !== null && el) {
+					el.style.height = newh + "px";
+					el.style.display = "block";
+				}
+			} catch (e) {
+				console.log("Failure at Presize of Slider:" + e)
+			}
+			//});
+		};
+	</script>
+</head>
+
+<body class="home page-template-default page page-id-3205 _masterslider _msp_version_3.6.1 elementor-default elementor-kit-6 elementor-page elementor-page-3205"
+    style="">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-dark-grayscale">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "
+				/>
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 0.49803921568627" />
+					<feFuncG type="table" tableValues="0 0.49803921568627" />
+					<feFuncB type="table" tableValues="0 0.49803921568627" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-grayscale">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "
+				/>
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 1" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0 1" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-purple-yellow">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "
+				/>
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-blue-red">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "
+				/>
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 1" />
+					<feFuncG type="table" tableValues="0 0.27843137254902" />
+					<feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-midnight">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "
+				/>
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 0" />
+					<feFuncG type="table" tableValues="0 0.64705882352941" />
+					<feFuncB type="table" tableValues="0 1" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-magenta-yellow">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "
+				/>
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.78039215686275 1" />
+					<feFuncG type="table" tableValues="0 0.94901960784314" />
+					<feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-purple-green">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "
+				/>
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0.44705882352941 0.4" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-blue-orange">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "
+				/>
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.098039215686275 1" />
+					<feFuncG type="table" tableValues="0 0.66274509803922" />
+					<feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<div class="pix-page-loading-bg"></div>
+	<div class="pix-loading-circ-path"></div>
+	<div id="page" class="site">
+		<div class="pix-topbar position-relative pix-header-desktop pix-topbar-normal  bg-white  text-white sticky-top2 p-sticky"
+		    style="z-index:999998;">
+			<div class="container-xl">
+				<div class="row d-flex align-items-center align-items-stretch">
+					<div class="col-12 col-lg-6 column pix-header-min-height text-left justify-content-start py-md-0 d-flex align-items-center">
+						<div class="d-inline-flex align-items-center2 line-height-1 pix-py-5 pix-hover-item mb-0">				
+								<a data-tf-popup="xrEvg4aD" data-tf-opacity="100" data-tf-size="87" data-tf-iframe-props="title=Website Lead Gen" data-tf-transitive-search-params data-tf-medium="snippet" class="text-body-default font-weight-bold btn btn-link p-0 line-height-1 pix-header-text text-sm  d-inline-flex2 align-items-center2">
+								Request early access.</span>
+								<i class="font-weight-bold pixicon-angle-right pix-header-icon-format pix-hover-right ml-2"></i>
+							</a>
+							<script src="https://embed.typeform.com/next/embed.js"></script>
+						</div>
+					</div>
+					<div class="col-12 col-lg-6 column text-right justify-content-end pix-header-min-height py-md-0 d-flex align-items-center justify-content-end">
+						<span class="mx-1"></span>
+						<div class="d-inline-flex pix-px-5 align-self-stretch position-relative mx-1">
+							<div class="bg-gray-2 pix-header-divider   pix-sm" data-color="gray-2" data-scroll-color=""></div>
+						</div>
+						<div class="pix-px-5 d-inline-block2 d-inline-flex align-items-between pix-social text-18 " data-anim-type="disabled">
+							<a class="d-flex align-items-center pix-header-text text-body-default" target="_self" href="https://www.facebook.com/qricle"
+							    title="Facebook">
+								<i class="pixicon-facebook3 px-2"></i>
+							</a>
+							<a class="d-flex align-items-center pix-header-text text-body-default" target="_self" href="https://www.linkedin.com/company/qricle"
+							    title="linkedin">
+								<i class="pixicon-linkedin px-2"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pix-header-scroll-placeholder"></div>
+		<header id="masthead" class="pix-header pix-is-sticky-header sticky-top  pix-header-desktop d-block pix-header-normal pix-scroll-shadow  header-scroll pix-header-container-area bg-gray-1"
+		    data-text="body-default" data-text-scroll="" data-bg-class="bg-gray-1" data-scroll-class="bg-white " data-scroll-color="">
+			<div class="container-xl">
+				<nav class="navbar pix-main-menu navbar-hover-drop navbar-expand-lg navbar-light text-center justify-content-center">
+					<div class="slide-in-container d-flex align-items-center">
+						<div class="d-inline-block animate-in slide-in-container" data-anim-type="slide-in-up" style="">
+							<a class="navbar-brand" href="index.html" target="" rel="home">
+								<img class="pix-logo" height="35" width="106.21107266436" src="wp-content/uploads/2022/08/qrblk.png" alt="Qricle" style="height:35px;width:auto;">
+								<img class="pix-logo-scroll" src="wp-content/uploads/2022/08/qrblk.png" alt="Qricle" style="height:35px;width:auto;">
+							</a>
+						</div>
+					</div>
+					<div id="navbarNav-130883" class="collapse navbar-collapse align-self-stretch   justify-content-end ">
+						<ul id="menu-primary-menu" class="navbar-nav nav-style-megamenu align-self-stretch align-items-center ">
+							<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-13473" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-3205 current_page_item active menu-item-13473 nav-item dropdown d-lg-flex nav-item-display align-self-stretch overflow-visible align-items-center">
+							</li>
+						</ul>
+					</div>
+					<span class="mx-1"></span>
+				</nav>
+			</div>
+			<div class="pix-header-border pix-main-header-line bg-gray-2" style="width:100%;height:1px;"></div>
+		</header>
+		<div class="pix-topbar pix-header-mobile pix-topbar-normal bg-gray-1 text-white p-sticky py-22 " style="">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 column d-flex justify-content-between py-md-02 pix-py-10">
+						<div class="pix-px-5 d-inline-block2 d-inline-flex align-items-between pix-social text-18 " data-anim-type="disabled">
+							<a class="d-flex align-items-center pix-header-text text-body-default" target="_self" href="https://www.facebook.com/qricle"
+							    title="Facebook">
+								<i class="pixicon-facebook3 px-2"></i>
+							</a>
+							<a class="d-flex align-items-center pix-header-text text-body-default" target="_self" href="https://www.linkedin.com/company/qricle"
+							    title="linkedin">
+								<i class="pixicon-linkedin px-2"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg-gray-2" style="width:100%;height:1px;"></div>
+		</div>
+		<header id="mobile_head" class="pix-header  pix-header-mobile d-inline-block pix-header-normal pix-scroll-shadow sticky-top header-scroll2 bg-white"
+		    style="">
+			<div class="container">
+				<nav class="navbar navbar-hover-drop navbar-expand-lg2 navbar-light d-inline-block2 ">
+					<div class="slide-in-container d-flex align-items-center">
+						<div class="d-inline-block animate-in slide-in-container" data-anim-type="slide-in-up" style="">
+							<a class="navbar-brand" href="index.html" target="" rel="home">
+								<img src="wp-content/uploads/2022/08/qrblk.png" alt="Qricle" height="35" width="106.21107266436" style="height:35px;width:auto;">
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="pix-header-border bg-gray-1" style="width:100%;height:1px;"></div>
+		</header>
+		<div id="content" class="site-content bg-gray-1 " style="">
+			<div class="container-fluid px-0 mx-0">
+				<div class="row">
+					<div class="col-12">
+						<div id="primary" class="content-area">
+							<main id="main" class="site-main">
+								<article id="post-3205" class="post-3205 page type-page status-publish hentry">
+									<div class="entry-content2">
+										<div data-elementor-type="wp-page" data-elementor-id="3205" class="elementor elementor-3205">
+											<section class="elementor-section elementor-top-section elementor-element elementor-element-b48ec91 elementor-section-stretched elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+											    data-id="b48ec91" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+												<div class="elementor-container elementor-column-gap-no">
+													<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d792b06" data-id="d792b06"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<section class="elementor-section elementor-inner-section elementor-element elementor-element-5c87bc3 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+															    data-id="5c87bc3" data-element_type="section">
+																<div class="elementor-container elementor-column-gap-default">
+																	<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-44c2061" data-id="44c2061"
+																	    data-element_type="column">
+																		<div class="elementor-widget-wrap elementor-element-populated">
+																			<div class="elementor-element elementor-element-f44994b elementor-widget elementor-widget-pix-animated-heading" data-id="f44994b"
+																			    data-element_type="widget" data-widget_type="pix-animated-heading.default">
+																				<div class="elementor-widget-container">
+																					<div class="text-center ">
+																						<div>
+																							<h1 class="pix-headline my-3  slide-inverse text-gradient-primary font-weight-bold  " style="">
+																								<span>Hotel’s First Ever Guest Interaction Management System </span>
+																								<span class="pix-words-wrapper"></span>
+																								<span></span>
+																							</h1>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-486b299 elementor-invisible elementor-widget elementor-widget-pix-text" data-id="486b299"
+																			    data-element_type="widget" data-widget_type="pix-text.default">
+																				<div class="elementor-widget-container">
+																					<div class="pix-el-text w-100 text-center ">
+																						<p class="text-20  text-gray-8 text-center ">
+																							<span class="text-gray-8 animate-in d-inline-block" data-anim-delay="200" data-anim-type="fade-in">Empowering hoteliers to boost their revenue, improve staff efficiency & enhance guest experience by
+																								bringing all the services onto guests’ smartphones.</span>
+																						</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="elementor-element elementor-element-7127925 elementor-widget__width-auto elementor-widget elementor-widget-pix-button"
+																			    data-id="7127925" data-element_type="widget" data-widget_type="pix-button.default">
+																				<div class="elementor-widget-container">
+																					<a data-tf-popup="xrEvg4aD" data-tf-opacity="100" data-tf-size="87" data-tf-iframe-props="title=Website Lead Gen" data-tf-transitive-search-params data-tf-medium="snippet"  class="btn m-0     shadow shadow-hover btn-primary d-inline-block pix-hover-item      btn-rounded animate-in pix-popup-link btn-md"
+																					    data-popup-id="3361">
+																						<span class="font-weight-bold ">Get early access</span>
+																						<i class="font-weight-bold pixicon-angle-circle-down  pix-hover-right  ml-1"></i>
+																					</a>
+																					<script src="https://embed.typeform.com/next/embed.js"></script>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</section>
+															<section class="elementor-section elementor-inner-section elementor-element elementor-element-8c68873 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+															    data-id="8c68873" data-element_type="section" data-settings="{&quot;shape_divider_bottom&quot;:&quot;curve&quot;}">
+																<div class="elementor-shape elementor-shape-bottom" data-negative="false">
+																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+																		<path class="elementor-shape-fill" d="M1000,4.3V0H0v4.3C0.9,23.1,126.7,99.2,500,100S1000,22.7,1000,4.3z" />
+																	</svg>
+																</div>
+																<div class="elementor-container elementor-column-gap-no">
+																	<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-530982d" data-id="530982d"
+																	    data-element_type="column">
+																		<div class="elementor-widget-wrap elementor-element-populated">
+																			<div class="elementor-element elementor-element-660ccc4 e-transform elementor-widget elementor-widget-pix-img" data-id="660ccc4"
+																			    data-element_type="widget" data-settings="{&quot;_transform_translateX_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:285,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:199,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:88,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-10,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-9,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
+																			    data-widget_type="pix-img.default">
+																				<div class="elementor-widget-container">
+																					<div class="d-inline-block ">
+																						<div class="pix-img-el    left d-inline-block  w-100 rounded-lg" data-jarallax-element=" 50">
+																							<img class="card-img2 pix-img-elem rounded-lg  h-1002" style="height:auto;" width="3840" height="2160"
+																							    srcset="wp-content/uploads/2022/09/sc3-1.png 3840w, wp-content/uploads/2022/09/sc3-1-300x169.png 300w, wp-content/uploads/2022/09/sc3-1-1024x576.png 1024w, wp-content/uploads/2022/09/sc3-1-768x432.png 768w, wp-content/uploads/2022/09/sc3-1-1536x864.png 1536w, wp-content/uploads/2022/09/sc3-1-2048x1152.png 2048w, wp-content/uploads/2022/09/sc3-1-1920x1080.png 1920w"
+																							    sizes="(max-width: 3840px) 100vw, 3840px" src="wp-content/uploads/2022/09/sc3-1.png" alt="" />
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</section>
+															<section class="elementor-section elementor-inner-section elementor-element elementor-element-99f8e16 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+															    data-id="99f8e16" data-element_type="section" data-settings="{&quot;shape_divider_bottom&quot;:&quot;curve&quot;}">
+																<div class="elementor-shape elementor-shape-bottom" data-negative="false">
+																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+																		<path class="elementor-shape-fill" d="M1000,4.3V0H0v4.3C0.9,23.1,126.7,99.2,500,100S1000,22.7,1000,4.3z" />
+																	</svg>
+																</div>
+																<div class="elementor-container elementor-column-gap-no">
+																	<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-cd9d977" data-id="cd9d977"
+																	    data-element_type="column">
+																		<div class="elementor-widget-wrap elementor-element-populated">
+																			<div class="elementor-element elementor-element-dd5aaf1 e-transform elementor-widget elementor-widget-pix-img" data-id="dd5aaf1"
+																			    data-element_type="widget" data-settings="{&quot;_transform_translateX_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-285,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-200,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-88,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-10,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:197,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:428,&quot;sizes&quot;:[]}}"
+																			    data-widget_type="pix-img.default">
+																				<div class="elementor-widget-container">
+																					<div class="d-inline-block ">
+																						<div class="pix-img-el    left d-inline-block  w-100 rounded-lg" data-jarallax-element=" -50">
+																							<img loading="lazy" class="card-img2 pix-img-elem rounded-lg  h-1002" style="height:auto;" width="3840"
+																							    height="2160" srcset="wp-content/uploads/2022/09/sc2-1.png 3840w, wp-content/uploads/2022/09/sc2-1-300x169.png 300w, wp-content/uploads/2022/09/sc2-1-1024x576.png 1024w, wp-content/uploads/2022/09/sc2-1-768x432.png 768w, wp-content/uploads/2022/09/sc2-1-1536x864.png 1536w, wp-content/uploads/2022/09/sc2-1-2048x1152.png 2048w, wp-content/uploads/2022/09/sc2-1-1920x1080.png 1920w"
+																							    sizes="(max-width: 3840px) 100vw, 3840px" src="wp-content/uploads/2022/09/sc2-1.png" alt="" />
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</section>
+															<section class="elementor-section elementor-inner-section elementor-element elementor-element-026e435 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+															    data-id="026e435" data-element_type="section" data-settings="{&quot;shape_divider_bottom&quot;:&quot;curve&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+																<div class="elementor-shape elementor-shape-bottom" data-negative="false">
+																	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+																		<path class="elementor-shape-fill" d="M1000,4.3V0H0v4.3C0.9,23.1,126.7,99.2,500,100S1000,22.7,1000,4.3z" />
+																	</svg>
+																</div>
+																<div class="elementor-container elementor-column-gap-no">
+																	<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-a45e95a" data-id="a45e95a"
+																	    data-element_type="column">
+																		<div class="elementor-widget-wrap elementor-element-populated">
+																			<div class="elementor-element elementor-element-ee1a329 e-transform elementor-widget elementor-widget-pix-img" data-id="ee1a329"
+																			    data-element_type="widget" data-settings="{&quot;_transform_translateY_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:211,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:441,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateX_effect_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_translateY_effect&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
+																			    data-widget_type="pix-img.default">
+																				<div class="elementor-widget-container">
+																					<div class="d-inline-block ">
+																						<div class="pix-img-el    left d-inline-block  w-100 rounded-lg">
+																							<img loading="lazy" class="card-img2 pix-img-elem rounded-lg  h-1002" style="height:auto;" width="3840"
+																							    height="2160" srcset="wp-content/uploads/2022/09/sc1-1.png 3840w, wp-content/uploads/2022/09/sc1-1-300x169.png 300w, wp-content/uploads/2022/09/sc1-1-1024x576.png 1024w, wp-content/uploads/2022/09/sc1-1-768x432.png 768w, wp-content/uploads/2022/09/sc1-1-1536x864.png 1536w, wp-content/uploads/2022/09/sc1-1-2048x1152.png 2048w, wp-content/uploads/2022/09/sc1-1-1920x1080.png 1920w"
+																							    sizes="(max-width: 3840px) 100vw, 3840px" src="wp-content/uploads/2022/09/sc1-1.png" alt="" />
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</section>
+														</div>
+													</div>
+												</div>
+											</section>
+											<section class="elementor-section elementor-top-section elementor-element elementor-element-704b104 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+											    data-id="704b104" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+												<div class="elementor-container elementor-column-gap-default">
+													<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a9a5246" data-id="a9a5246"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-fdbc95d elementor-widget elementor-widget-pix-badge" data-id="fdbc95d" data-element_type="widget"
+															    data-widget_type="pix-badge.default">
+																<div class="elementor-widget-container">
+																	<h5 class="pix-badge-element d-inline-block mr-1 ">
+																		<span class="badge font-weight-bold bg-purple  " style=" ">
+																			<span class="text-white" style="">All-in-one Solution</span>
+																		</span>
+																	</h5>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-e0a2bef elementor-widget elementor-widget-pix-highlighted-text" data-id="e0a2bef"
+															    data-element_type="widget" data-widget_type="pix-highlighted-text.default">
+																<div class="elementor-widget-container">
+																	<div id="highlighted-text-103827596" class="pix-highlighted-element text-center ">
+																		<h2 class="pix-highlighted-items " style="" data-anim-type="" data-anim-delay="">
+																			<span class="">
+																				<span class="pix-highlighted-text pix-highlight-item font-weight-normal  font-weight-bold heading-font text-white">Control the entire guest journey from</span>
+																			</span>
+																			<span id="highlighted-text-103827596-1" class="pix-highlight-bg align-middle2  elementor-repeater-item-13abc77 highlighted-text-103827596-1 animate-in"
+																			    data-anim-type="highlight-grow" data-anim-delay="200">
+																				<span class="pix-highlighted-text  pix-highlight-item font-weight-normal  font-weight-bold heading-font text-white">
+																				checkin</span>
+																			</span>
+																			<span class="">
+																				<span class="pix-highlighted-text pix-highlight-item font-weight-normal  font-weight-bold heading-font text-white">
+																				to</span>
+																			</span>
+																			<span id="highlighted-text-103827596-3" class="pix-highlight-bg align-middle2  elementor-repeater-item-568523f highlighted-text-103827596-3 animate-in"
+																			    data-anim-type="highlight-grow" data-anim-delay="200">
+																				<span class="pix-highlighted-text  pix-highlight-item font-weight-normal  font-weight-bold heading-font text-white">
+																				checkout</span>
+																			</span>
+																		</h2>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-be9279d elementor-widget elementor-widget-heading" data-id="be9279d" data-element_type="widget"
+															    data-widget_type="heading.default">
+																<div class="elementor-widget-container">
+																	<style>
+																		/*! elementor - v3.7.3 - 29-08-2022 */
+
+																		.elementor-heading-title {
+																			padding: 0;
+																			margin: 0;
+																			line-height: 1
+																		}
+
+																		.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+																			color: inherit;
+																			font-size: inherit;
+																			line-height: inherit
+																		}
+
+																		.elementor-widget-heading .elementor-heading-title.elementor-size-small {
+																			font-size: 15px
+																		}
+
+																		.elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+																			font-size: 19px
+																		}
+
+																		.elementor-widget-heading .elementor-heading-title.elementor-size-large {
+																			font-size: 29px
+																		}
+
+																		.elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+																			font-size: 39px
+																		}
+
+																		.elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+																			font-size: 59px
+																		}
+																	</style>
+																	<h5 class="elementor-heading-title elementor-size-default">Effectively communicate & engage with all the in-house guests with Qricle</h5>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+											<section class="elementor-section elementor-top-section elementor-element elementor-element-d3526d9 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+											    data-id="d3526d9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+												<div class="elementor-container elementor-column-gap-default">
+													<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c6cb330" data-id="c6cb330"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-6bd9211 elementor-widget elementor-widget-pix-img" data-id="6bd9211" data-element_type="widget"
+															    data-widget_type="pix-img.default">
+																<div class="elementor-widget-container">
+																	<div class="d-inline-block ">
+																		<div class="pix-img-el    left d-inline-block  w-100 rounded-lg">
+																			<img loading="lazy" class="card-img2 pix-img-elem rounded-lg  h-1002" style="height:auto;" width="4191"
+																			    height="2795" srcset="wp-content/uploads/2022/09/sli.png 4191w, wp-content/uploads/2022/09/sli-300x200.png 300w, wp-content/uploads/2022/09/sli-1024x683.png 1024w, wp-content/uploads/2022/09/sli-768x512.png 768w, wp-content/uploads/2022/09/sli-1536x1024.png 1536w, wp-content/uploads/2022/09/sli-2048x1366.png 2048w"
+																			    sizes="(max-width: 4191px) 100vw, 4191px" src="wp-content/uploads/2022/09/sli.png" alt="" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+											<section class="elementor-section elementor-top-section elementor-element elementor-element-3c034e0 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+											    data-id="3c034e0" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+												<div class="elementor-container elementor-column-gap-default">
+													<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3e6f2de" data-id="3e6f2de"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-7bee882 elementor-widget elementor-widget-pix-animated-heading" data-id="7bee882"
+															    data-element_type="widget" data-widget_type="pix-animated-heading.default">
+																<div class="elementor-widget-container">
+																	<div class="text-center ">
+																		<div>
+																			<h1 class="pix-headline my-3  slide-inverse text-heading-default font-weight-bold  " style="">
+																				<span>Your hotel's own digital
+																					<br> </span>
+																				<span class="pix-words-wrapper">
+																					<span class="is-visible text-orange">Butler</span>
+																					<span class="text-cyan">Analyst</span>
+																					<span class="text-green">Marketer</span>
+																					<span class="text-red">Companion</span>
+																				</span>
+																				<span></span>
+																			</h1>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+											<section class="elementor-section elementor-top-section elementor-element elementor-element-27ad2e0 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+											    data-id="27ad2e0" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+												<div class="elementor-container elementor-column-gap-extended">
+													<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-816a629" data-id="816a629"
+													    data-element_type="column" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-c7e088c elementor-widget elementor-widget-pix-feature" data-id="c7e088c"
+															    data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="pix-feature.default">
+																<div class="elementor-widget-container">
+																	<div id="duo-icon-198702814" class="pix-feature-el text-left ">
+																		<div class="rounded-circle d-inline-block2 d-inline-flex align-items-center justify-content-center line-height-0 bg-primary-light "
+																		    style=" width:64.8px;height:64.8px;position:relative;text-align:center;">
+																			<div class="text-primary" style="display:inline-block;width:36px;height:36px;font-size:36px;">
+																				<svg width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+																					<defs></defs>
+																					<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+																						<path d="M18,15 L18,13.4774152 C18,13.3560358 18.0441534,13.2388009 18.1242243,13.147578 C18.3063883,12.9400428 18.622302,12.9194754 18.8298372,13.1016395 L21.7647988,15.6778026 C21.7814819,15.6924462 21.7971714,15.7081846 21.811763,15.7249133 C21.9932797,15.933015 21.9717282,16.2488631 21.7636265,16.4303797 L18.828665,18.9903994 C18.7375973,19.0698331 18.6208431,19.1135979 18.5,19.1135979 C18.2238576,19.1135979 18,18.8897403 18,18.6135979 L18,17 L16.445419,17 C14.5938764,17 12.8460429,16.1451629 11.7093057,14.6836437 L7.71198984,9.54423755 C6.95416504,8.56989138 5.7889427,8 4.55458097,8 L2,8 L2,6 L4.55458097,6 C6.40612357,6 8.15395708,6.85483706 9.29069428,8.31635632 L13.2880102,13.4557625 C14.045835,14.4301086 15.2110573,15 16.445419,15 L18,15 Z"
+																						    fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+																						<path d="M18,6 L18,4.4774157 C18,4.3560363 18.0441534,4.23880134 18.1242243,4.14757848 C18.3063883,3.94004327 18.622302,3.9194759 18.8298372,4.10163997 L21.7647988,6.67780304 C21.7814819,6.69244668 21.7971714,6.70818509 21.811763,6.72491379 C21.9932797,6.93301548 21.9717282,7.24886356 21.7636265,7.43038021 L18.828665,9.99039986 C18.7375973,10.0698336 18.6208431,10.1135984 18.5,10.1135984 C18.2238576,10.1135984 18,9.88974079 18,9.61359842 L18,8 L16.445419,8 C15.2110573,8 14.045835,8.56989138 13.2880102,9.54423755 L9.29069428,14.6836437 C8.15395708,16.1451629 6.40612357,17 4.55458097,17 L2,17 L2,15 L4.55458097,15 C5.7889427,15 6.95416504,14.4301086 7.71198984,13.4557625 L11.7093057,8.31635632 C12.8460429,6.85483706 14.5938764,6 16.445419,6 L18,6 Z"
+																						    fill="#000000" fill-rule="nonzero"></path>
+																					</g>
+																				</svg>
+																			</div>
+																		</div>
+																		<h2 class="font-weight-bold   text-heading-default " style="padding-top:30px;">Guest interactions made easy</h2>
+																		<div class="text-body-default text-18     " style="padding-top:20px;">Empowering hoteliers to effectively communicate with all the guests digitally.</div>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-ec901d7 elementor-widget elementor-widget-pix-accordion" data-id="ec901d7"
+															    data-element_type="widget" data-widget_type="pix-accordion.default">
+																<div class="elementor-widget-container">
+																	<div class="accordion w-100 accordion-card bg-white2 rounded-lg2" id="accordion-6536278">
+																		<div class="card">
+																			<div class="card-header pix-mb-10 shadow-sm rounded-lg bg-white" id="headingpix-tab-8642401">
+																				<button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#collapsepix-tab-8642401" aria-expanded="true"
+																				    aria-controls="collapsepix-tab-8642401">
+																					<span class="font-weight-bold text-primary">Communications Powered by Whatsapp</span>
+																				</button>
+																			</div>
+																			<div id="collapsepix-tab-8642401" class="collapse " aria-labelledby="headingpix-tab-8642401">
+																				<div class="card-body">
+																				</div>
+																			</div>
+																		</div>
+																		<div class="card">
+																			<div class="card-header pix-mb-10 shadow-sm rounded-lg bg-white" id="headingpix-tab-3519618">
+																				<button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#collapsepix-tab-3519618" aria-expanded="true"
+																				    aria-controls="collapsepix-tab-3519618">
+																					<span class="font-weight-bold text-primary">Create daily offers & coupon codes for more orders.</span>
+																				</button>
+																			</div>
+																			<div id="collapsepix-tab-3519618" class="collapse " aria-labelledby="headingpix-tab-3519618">
+																				<div class="card-body">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-d1fae52 elementor-widget elementor-widget-pix-button" data-id="d1fae52" data-element_type="widget"
+															    data-widget_type="pix-button.default">
+																<div class="elementor-widget-container">
+																	<div class="d-block w-100 text-left">
+																		<a data-tf-popup="xrEvg4aD" data-tf-opacity="100" data-tf-size="87" data-tf-iframe-props="title=Website Lead Gen" data-tf-transitive-search-params data-tf-medium="snippet" class="btn m-0     shadow shadow-hover text-heading-default btn-white d-inline-block pix-hover-item      btn-rounded pix-btn-div btn-md">
+																			<span class="font-weight-bold ">Request early access</span>
+																			<i class="font-weight-bold pixicon-angle-right  pix-hover-right  ml-1"></i>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ed500b9" data-id="ed500b9"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-253029d elementor-widget elementor-widget-pix-img" data-id="253029d" data-element_type="widget"
+															    data-widget_type="pix-img.default">
+																<div class="elementor-widget-container">
+																	<div class="d-inline-block pix-scale-in-sm">
+																		<div class="pix-img-el    fly-sm left d-inline-block  w-100 rounded-lg">
+																			<img loading="lazy" class="card-img2 pix-img-elem rounded-lg  h-1002" style="height:auto;" width="2634"
+																			    height="2135" srcset="wp-content/uploads/2022/09/grabee-close-feedback-loop_d2pqty.png 2634w, wp-content/uploads/2022/09/grabee-close-feedback-loop_d2pqty-300x243.png 300w, wp-content/uploads/2022/09/grabee-close-feedback-loop_d2pqty-1024x830.png 1024w, wp-content/uploads/2022/09/grabee-close-feedback-loop_d2pqty-768x623.png 768w, wp-content/uploads/2022/09/grabee-close-feedback-loop_d2pqty-1536x1245.png 1536w, wp-content/uploads/2022/09/grabee-close-feedback-loop_d2pqty-2048x1660.png 2048w"
+																			    sizes="(max-width: 2634px) 100vw, 2634px" src="wp-content/uploads/2022/09/grabee-close-feedback-loop_d2pqty.png"
+																			    alt="" />
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+											<section class="elementor-section elementor-top-section elementor-element elementor-element-a1bb262 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+											    data-id="a1bb262" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+												<div class="elementor-container elementor-column-gap-extended">
+													<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f9cca9d" data-id="f9cca9d"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-44bb634 elementor-invisible elementor-widget elementor-widget-pix-img" data-id="44bb634"
+															    data-element_type="widget" data-widget_type="pix-img.default">
+																<div class="elementor-widget-container">
+																	<div class="d-inline-block pix-scale-in-sm">
+																		<div class="animate-in  d-inline-block" data-anim-type="fade-in-left" data-anim-delay="500">
+																			<div class="pix-img-el    fly-sm left d-inline-block  w-100 rounded-lg">
+																				<img loading="lazy" class="card-img2 pix-img-elem rounded-lg  h-1002" style="height:auto;" width="2134"
+																				    height="2134" srcset="wp-content/uploads/2022/09/landing3.png 2134w, wp-content/uploads/2022/09/landing3-300x300.png 300w, wp-content/uploads/2022/09/landing3-1024x1024.png 1024w, wp-content/uploads/2022/09/landing3-150x150.png 150w, wp-content/uploads/2022/09/landing3-768x768.png 768w, wp-content/uploads/2022/09/landing3-1536x1536.png 1536w, wp-content/uploads/2022/09/landing3-2048x2048.png 2048w, wp-content/uploads/2022/09/landing3-400x400.png 400w, wp-content/uploads/2022/09/landing3-75x75.png 75w, wp-content/uploads/2022/09/landing3-460x460.png 460w"
+																				    sizes="(max-width: 2134px) 100vw, 2134px" src="wp-content/uploads/2022/09/landing3.png" alt="" />
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ef7ab3c" data-id="ef7ab3c"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-213e12d elementor-invisible elementor-widget elementor-widget-pix-feature"
+															    data-id="213e12d" data-element_type="widget" data-widget_type="pix-feature.default">
+																<div class="elementor-widget-container">
+																	<div id="duo-icon-10652357" class="pix-feature-el text-left ">
+																		<h2 class="font-weight-bold   text-heading-default animate-in" style="padding-top:30px;" data-anim-type="fade-in-up"
+																		    data-anim-delay="900">Powerful dashboard thats helps you manage</h2>
+																		<div class="text-body-default text-18     animate-in" style="padding-top:20px;"
+																		    data-anim-type="fade-in-up" data-anim-delay="1000">Manage all your guest data and actions at one place. </div>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-ea84ccc elementor-widget elementor-widget-pix-accordion" data-id="ea84ccc"
+															    data-element_type="widget" data-widget_type="pix-accordion.default">
+																<div class="elementor-widget-container">
+																	<div class="accordion w-100 accordion-card bg-white2 rounded-lg2" id="accordion-6811412">
+																		<div class="card">
+																			<div class="card-header pix-mb-10 shadow-sm rounded-lg bg-white" id="headingpix-tab-5456854">
+																				<button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#collapsepix-tab-5456854" aria-expanded="true"
+																				    aria-controls="collapsepix-tab-5456854">
+																					<span class="font-weight-bold text-primary">Run marketing campaigns for F&B and ancillary services</span>
+																				</button>
+																			</div>
+																			<div id="collapsepix-tab-5456854" class="collapse " aria-labelledby="headingpix-tab-5456854">
+																				<div class="card-body">
+																				</div>
+																			</div>
+																		</div>
+																		<div class="card">
+																			<div class="card-header pix-mb-10 shadow-sm rounded-lg bg-white" id="headingpix-tab-4564177">
+																				<button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#collapsepix-tab-4564177" aria-expanded="true"
+																				    aria-controls="collapsepix-tab-4564177">
+																					<span class="font-weight-bold text-primary">Separate staff accounts and permissions</span>
+																				</button>
+																			</div>
+																			<div id="collapsepix-tab-4564177" class="collapse " aria-labelledby="headingpix-tab-4564177">
+																				<div class="card-body">
+																				</div>
+																			</div>
+																		</div>
+																		<div class="card">
+																			<div class="card-header pix-mb-10 shadow-sm rounded-lg bg-white" id="headingpix-tab-899567">
+																				<button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#collapsepix-tab-899567" aria-expanded="true"
+																				    aria-controls="collapsepix-tab-899567">
+																					<span class="font-weight-bold text-primary">Understand your guests better with detailed guest analytics.</span>
+																				</button>
+																			</div>
+																			<div id="collapsepix-tab-899567" class="collapse " aria-labelledby="headingpix-tab-899567">
+																				<div class="card-body">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-f751bc2 elementor-widget elementor-widget-pix-button" data-id="f751bc2" data-element_type="widget"
+															    data-widget_type="pix-button.default">
+																<div class="elementor-widget-container">
+																	<div class="d-block w-100 text-left">
+																		<a data-tf-popup="xrEvg4aD" data-tf-opacity="100" data-tf-size="87" data-tf-iframe-props="title=Website Lead Gen" data-tf-transitive-search-params data-tf-medium="snippet" class="btn m-0     shadow shadow-hover text-heading-default btn-white d-inline-block pix-hover-item      btn-rounded animate-in pix-btn-div btn-md"
+																		    data-anim-type="fade-in-up" data-anim-delay="800">
+																			<span class="font-weight-bold ">Request early access</span>
+																			<i class="font-weight-bold pixicon-angle-right  pix-hover-right  ml-1"></i>
+																		</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+											<section class="elementor-section elementor-top-section elementor-element elementor-element-ef6f3e2 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+											    data-id="ef6f3e2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+												<div class="elementor-container elementor-column-gap-default">
+													<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-05111a4" data-id="05111a4"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-c9f1071 elementor-widget elementor-widget-pix-numbers" data-id="c9f1071"
+															    data-element_type="widget" data-widget_type="pix-numbers.default">
+																<div class="elementor-widget-container">
+																	<div class="pix_numbers animate-math ">
+																		<div>
+																			<h2 class="align-self-center text-center ">
+																				<span class="font-weight-bold text-green" style=""></span>
+																				<span class="number font-weight-bold text-green" style="" data-duration="1000" data-to="20">0</span>
+																				<span class="font-weight-bold text-green" style="">%</span>
+																			</h2>
+																		</div>
+																		<div class="w-100 text-center">
+																			<h6 class="mt-0 text-dark-opacity-5 font-weight-bold" style="">Increase in Revenue</h6>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-58d5e25" data-id="58d5e25"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-c5605e3 elementor-widget elementor-widget-pix-numbers" data-id="c5605e3"
+															    data-element_type="widget" data-widget_type="pix-numbers.default">
+																<div class="elementor-widget-container">
+																	<div class="pix_numbers animate-math ">
+																		<div>
+																			<h2 class="align-self-center text-center ">
+																				<span class="font-weight-bold text-orange" style=""></span>
+																				<span class="number font-weight-bold text-orange" style="" data-duration="1000" data-to="7">0</span>
+																				<span class="font-weight-bold text-orange" style="">%</span>
+																			</h2>
+																		</div>
+																		<div class="w-100 text-center">
+																			<h6 class="mt-0 text-dark-opacity-5 font-weight-bold" style="">Decrease in Costs</h6>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-2b638e9" data-id="2b638e9"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-be5329a elementor-widget elementor-widget-pix-numbers" data-id="be5329a"
+															    data-element_type="widget" data-widget_type="pix-numbers.default">
+																<div class="elementor-widget-container">
+																	<div class="pix_numbers animate-math ">
+																		<div>
+																			<h2 class="align-self-center text-center ">
+																				<span class="font-weight-bold text-custom" style="color:#13B3D7 !important;"></span>
+																				<span class="number font-weight-bold text-custom" style="color:#13B3D7 !important;" data-duration="1000"
+																				    data-to="30">0</span>
+																				<span class="font-weight-bold text-custom" style="color:#13B3D7 !important;">%</span>
+																			</h2>
+																		</div>
+																		<div class="w-100 text-center">
+																			<h6 class="mt-0 text-dark-opacity-5 font-weight-bold" style="">Increase in Reviews</h6>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+											<section class="elementor-section elementor-top-section elementor-element elementor-element-74c3855 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+											    data-id="74c3855" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;gradient&quot;}">
+												<div class="elementor-container elementor-column-gap-default">
+													<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dfe3d6c" data-id="dfe3d6c"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-c56f32d elementor-widget elementor-widget-pix-badge" data-id="c56f32d" data-element_type="widget"
+															    data-widget_type="pix-badge.default">
+																<div class="elementor-widget-container">
+																	<div class="pix-element-div w-100 text-center">
+																		<h6 class="pix-badge-element d-inline-block mr-1 ">
+																			<span class="badge font-weight-bold secondary-font bg-green  " style=" ">
+																				<span class="text-white" style="">Join Us Today</span>
+																			</span>
+																		</h6>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-849efc1 elementor-invisible elementor-widget elementor-widget-pix-heading"
+															    data-id="849efc1" data-element_type="widget" data-widget_type="pix-heading.default">
+																<div class="elementor-widget-container">
+																	<div class="pix-heading-el text-center ">
+																		<div>
+																			<div class="slide-in-container">
+																				<h3 class="text-white font-weight-bold animate-in heading-text el-title_custom_color mb-12" style="" data-anim-type="fade-in-up"
+																				    data-anim-delay="200">Pricing for Everyone.</h3>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-c7b4652 elementor-invisible elementor-widget elementor-widget-pix-text" data-id="c7b4652"
+															    data-element_type="widget" data-widget_type="pix-text.default">
+																<div class="elementor-widget-container">
+																	<div class="pix-el-text w-100 text-center ">
+																		<p class="text-20 m-0 text-white text-center ">
+																			<span class="text-white animate-in d-inline-block" data-anim-delay="900" data-anim-type="fade-in">Hotels, hostels, & BnBs, We're made for everyone! All shapes and sizes.</span>
+																		</p>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-9536871 elementor-invisible elementor-widget elementor-widget-pix-heading"
+															    data-id="9536871" data-element_type="widget" data-widget_type="pix-heading.default">
+																<div class="elementor-widget-container">
+																	<div class="pix-heading-el text-center ">
+																		<div>
+																			<div class="slide-in-container">
+																				<h3 class="text-white font-weight-bold animate-in heading-text el-title_custom_color mb-12" style="" data-anim-type="fade-in-up"
+																				    data-anim-delay="200">Starting from $1.5/room/month</h3>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+											<section class="elementor-section elementor-top-section elementor-element elementor-element-220046d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+											    data-id="220046d" data-element_type="section">
+												<div class="elementor-container elementor-column-gap-default">
+													<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-4253106" data-id="4253106"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-51340fa elementor-invisible elementor-widget elementor-widget-pix-feature"
+															    data-id="51340fa" data-element_type="widget" data-widget_type="pix-feature.default">
+																<div class="elementor-widget-container">
+																	<div id="duo-icon-157450334" class="media ">
+																		<div class="mr-3 feature_img animate-in" data-anim-type="fade-in-up" data-anim-delay="200" style="position:relative;text-align:center;">
+																			<i style="display:inline-block;font-size:30px;min-width:30px;line-height:30px;" class="text-body-default align-middle pixicon-users-2"></i>
+																		</div>
+																		<div class="media-body text-left">
+																			<h6 class="font-weight-bold   text-heading-default animate-in " style="padding-top:0px;" data-anim-type="fade-in-up"
+																			    data-anim-delay="300">White-labeled Guest WebApp</h6>
+																			<div class="text-body-default      animate-in" style="padding-top:10px;"
+																			    data-anim-type="fade-in-up" data-anim-delay="400">Customised interface according to your unique brand identity.</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-399325e elementor-invisible elementor-widget elementor-widget-pix-feature"
+															    data-id="399325e" data-element_type="widget" data-widget_type="pix-feature.default">
+																<div class="elementor-widget-container">
+																	<div id="duo-icon-164647686" class="media ">
+																		<div class="mr-3 feature_img animate-in" data-anim-type="fade-in-up" data-anim-delay="800" style="position:relative;text-align:center;">
+																			<i style="display:inline-block;font-size:30px;min-width:30px;line-height:30px;" class="text-body-default align-middle pixicon-speedometer"></i>
+																		</div>
+																		<div class="media-body text-left">
+																			<h6 class="font-weight-bold   text-heading-default animate-in " style="padding-top:0px;" data-anim-type="fade-in-up"
+																			    data-anim-delay="900">Digital payments & checkout</h6>
+																			<div class="text-body-default      animate-in" style="padding-top:10px;"
+																			    data-anim-type="fade-in-up" data-anim-delay="1000">No need to keep your guests waiting for checkout, Qricle does it all</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-3713b4a" data-id="3713b4a"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-700f0df elementor-invisible elementor-widget elementor-widget-pix-feature"
+															    data-id="700f0df" data-element_type="widget" data-widget_type="pix-feature.default">
+																<div class="elementor-widget-container">
+																	<div id="duo-icon-132274309" class="media ">
+																		<div class="mr-3 feature_img animate-in" data-anim-type="fade-in-up" data-anim-delay="400" style="position:relative;text-align:center;">
+																			<i style="display:inline-block;font-size:30px;min-width:30px;line-height:30px;" class="text-body-default align-middle pixicon-servers-refresh-1"></i>
+																		</div>
+																		<div class="media-body text-left">
+																			<h6 class="font-weight-bold   text-heading-default animate-in " style="padding-top:0px;" data-anim-type="fade-in-up"
+																			    data-anim-delay="500">Integration with top PMS</h6>
+																			<div class="text-body-default      animate-in" style="padding-top:10px;"
+																			    data-anim-type="fade-in-up" data-anim-delay="600">Seamless functioning and automating your workflows.</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-9a5ead8 elementor-invisible elementor-widget elementor-widget-pix-feature"
+															    data-id="9a5ead8" data-element_type="widget" data-widget_type="pix-feature.default">
+																<div class="elementor-widget-container">
+																	<div id="duo-icon-93379229" class="media ">
+																		<div class="mr-3 feature_img animate-in" data-anim-type="fade-in-up" data-anim-delay="800" style="position:relative;text-align:center;">
+																			<i style="display:inline-block;font-size:30px;min-width:30px;line-height:30px;" class="text-body-default align-middle pixicon-boarding-pass"></i>
+																		</div>
+																		<div class="media-body text-left">
+																			<h6 class="font-weight-bold   text-heading-default animate-in " style="padding-top:0px;" data-anim-type="fade-in-up"
+																			    data-anim-delay="900">Advance analytics</h6>
+																			<div class="text-body-default      animate-in" style="padding-top:10px;" data-anim-type="fade-in-up"
+																			    data-anim-delay="1000">Powerful analytics of your property & guests to understand them better.</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-efb6839" data-id="efb6839"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-bde851d elementor-invisible elementor-widget elementor-widget-pix-feature"
+															    data-id="bde851d" data-element_type="widget" data-widget_type="pix-feature.default">
+																<div class="elementor-widget-container">
+																	<div id="duo-icon-21340413" class="media ">
+																		<div class="mr-3 feature_img animate-in" data-anim-type="fade-in-up" data-anim-delay="400" style="position:relative;text-align:center;">
+																			<i style="display:inline-block;font-size:30px;min-width:30px;line-height:30px;" class="text-body-default align-middle pixicon-map-pin-3-place-2"></i>
+																		</div>
+																		<div class="media-body text-left">
+																			<h6 class="font-weight-bold   text-heading-default animate-in " style="padding-top:0px;" data-anim-type="fade-in-up"
+																			    data-anim-delay="500">Upselling & cross-selling</h6>
+																			<div class="text-body-default      animate-in" style="padding-top:10px;"
+																			    data-anim-type="fade-in-up" data-anim-delay="600">Ability to suggest food items & services offered by your hotel.</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-5b58241 elementor-invisible elementor-widget elementor-widget-pix-feature"
+															    data-id="5b58241" data-element_type="widget" data-widget_type="pix-feature.default">
+																<div class="elementor-widget-container">
+																	<div id="duo-icon-96787000" class="media ">
+																		<div class="mr-3 feature_img animate-in" data-anim-type="fade-in-up" data-anim-delay="800" style="position:relative;text-align:center;">
+																			<i style="display:inline-block;font-size:30px;min-width:30px;line-height:30px;" class="text-body-default align-middle pixicon-world-map-3"></i>
+																		</div>
+																		<div class="media-body text-left">
+																			<h6 class="font-weight-bold   text-heading-default animate-in " style="padding-top:0px;" data-anim-type="fade-in-up"
+																			    data-anim-delay="900">Key Strategy Officer</h6>
+																			<div class="text-body-default      animate-in" style="padding-top:10px;" data-anim-type="fade-in-up"
+																			    data-anim-delay="1000">Our experts will work with you to better utilise our platform exclusively for you.</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+											<section class="elementor-section elementor-top-section elementor-element elementor-element-3046a06 elementor-section-stretched elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+											    data-id="3046a06" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+												<div class="elementor-container elementor-column-gap-default">
+													<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3e930bc" data-id="3e930bc"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-2b37238 elementor-invisible elementor-widget elementor-widget-pix-heading"
+															    data-id="2b37238" data-element_type="widget" data-widget_type="pix-heading.default">
+																<div class="elementor-widget-container">
+																	<div class="pix-heading-el text-left ">
+																		<div>
+																			<div class="slide-in-container">
+																				<h2 class="text-heading-default font-weight-bold animate-in heading-text el-title_custom_color mb-12"
+																				    style="" data-anim-type="fade-in-up" data-anim-delay="0">Hear it from the fellow hoteliers!</h2>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-2e405da elementor-invisible elementor-widget elementor-widget-pix-text" data-id="2e405da"
+															    data-element_type="widget" data-widget_type="pix-text.default">
+																<div class="elementor-widget-container">
+																	<div class="pix-el-text w-100 text-left ">
+																		<div class="d-inline-block" style="max-width:500px;">
+																			<p class="text-20  text-body-default text-left ">
+																				<span class="text-body-default animate-in d-inline-block" data-anim-delay="200" data-anim-type="fade-in-up">Be ready to use the next generation of WordPress themes. Be ready to met Essentials by pixfort.</span>
+																			</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-660e755 elementor-widget elementor-widget-pix-button" data-id="660e755" data-element_type="widget"
+															    data-widget_type="pix-button.default">
+																<div class="elementor-widget-container">
+																	<div class="d-block w-100 text-left">
+																		<span class="btn m-0     shadow shadow-hover text-heading-default btn-white d-inline-block pix-hover-item      btn-rounded animate-in pix-btn-div btn-md"
+																		    data-anim-type="fade-in-up" data-anim-delay="800">
+																			<i class="font-weight-bold pixicon-bag-2  pix-hover-left  mr-1"></i>
+																			<span class="font-weight-bold ">Book a Demo</span>
+																		</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-d45377b" data-id="d45377b"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-f72b5fe elementor-invisible elementor-widget elementor-widget-pix-reviews-slider"
+															    data-id="f72b5fe" data-element_type="widget" data-widget_type="pix-reviews-slider.default">
+																<div class="elementor-widget-container">
+																	<div class="">
+																		<div id="pix-slider-143627019" class="pix-main-slider pix-overflow-all-visible pix-opacity-slider pix-circular-left  pix-overflow-y-visible pix-slider-1 pix-slider-dots  "
+																		    data-flickity='{"autoPlay":false,"freeScroll":false,"prevNextButtons":false,"wrapAround":true,"pageDots":true,"adaptiveHeight":true,"rightToLeft":false,"cellAlign":"center","contain":true,"slider_effect":"pix-circular-left","pix_id":"#pix-slider-143627019"}'>
+																			<div class="carousel-cell">
+																				<div class="slide-inner pix-p-10">
+																					<div class="pix-slider-effects">
+																						<div class="card2 p-3 bg-white rounded-10 shadow-lg shadow-hover-lg fly-sm ">
+																							<div class="blockquote2 mb-0 card-body text-center">
+																								<div class="rounded-circle text-center mb-4 bg-dark-opacity-1 overflow-hidden d-inline-block pix-review-img">
+																									<img width="200" height="200" src="wp-content/uploads/2020/05/google-logo.png" class="img-fluid pix-fit-cover"
+																									    alt="Homepage Software Elementor" loading="lazy" srcset="wp-content/uploads/2020/05/google-logo.png 200w, wp-content/uploads/2020/05/google-logo-150x150.png 150w, wp-content/uploads/2020/05/google-logo-75x75.png 75w"
+																									    sizes="(max-width: 200px) 100vw, 200px" />
+																								</div>
+																								<p class=" text-body-default text-18 animate-in" style="" data-anim-type="fade-in-up" data-anim-delay="500">I am a web designer, you guys are very inspiring. I wish to see more work from you, maybe more freebies.
+																									Using pixfort products made my life a lot easier!</p>
+																								<div class="text-center animate-in" data-anim-type="fade-in-up"
+																								    data-anim-delay="600">
+																									<span class="bg-orange-light rounded-lg pb-1 mb-3 d-inline-block px-2 text-yellow">
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star-empty.svg"
+																										    width="24" height="14" alt="" />
+																									</span>
+																								</div>
+																								<div class="d-flex justify-content-center text-center">
+																									<div class="align-self-center">
+																										<h6 class="text-heading-default font-weight-bold mb-0 text-attachment-fix mx-3 animate-in" data-anim-type="fade-in-up"
+																										    data-anim-delay="700" style="">Tommy haffman</h6>
+																										<span class="text-body-default  text-attachment-fix pb-0 mx-3 mb-0 animate-in"
+																										    style="" data-anim-type="fade-in-up" data-anim-delay="800">via google.com</span>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="carousel-cell">
+																				<div class="slide-inner pix-p-10">
+																					<div class="pix-slider-effects">
+																						<div class="card2 p-3 bg-white rounded-10 shadow-lg shadow-hover-lg fly-sm ">
+																							<div class="blockquote2 mb-0 card-body text-center">
+																								<div class="rounded-circle text-center mb-4 bg-dark-opacity-1 overflow-hidden d-inline-block pix-review-img">
+																									<img width="200" height="200" src="wp-content/uploads/2020/05/twitter-logo.png" class="img-fluid pix-fit-cover"
+																									    alt="Homepage Software Elementor" loading="lazy" srcset="wp-content/uploads/2020/05/twitter-logo.png 200w, wp-content/uploads/2020/05/twitter-logo-150x150.png 150w, wp-content/uploads/2020/05/twitter-logo-75x75.png 75w"
+																									    sizes="(max-width: 200px) 100vw, 200px" />
+																								</div>
+																								<p class=" text-body-default text-18 animate-in" style="" data-anim-type="fade-in-up" data-anim-delay="500">I am a web designer, you guys are very inspiring. I wish to see more work from you, maybe more freebies.
+																									Using pixfort products made my life a lot easier!</p>
+																								<div class="text-center animate-in" data-anim-type="fade-in-up"
+																								    data-anim-delay="600">
+																									<span class="bg-orange-light rounded-lg pb-1 mb-3 d-inline-block px-2 text-yellow">
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																									</span>
+																								</div>
+																								<div class="d-flex justify-content-center text-center">
+																									<div class="align-self-center">
+																										<h6 class="text-heading-default font-weight-bold mb-0 text-attachment-fix mx-3 animate-in" data-anim-type="fade-in-up"
+																										    data-anim-delay="700" style="">Marc Antoine</h6>
+																										<span class="text-body-default  text-attachment-fix pb-0 mx-3 mb-0 animate-in"
+																										    style="" data-anim-type="fade-in-up" data-anim-delay="800">via twitter.com</span>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="carousel-cell">
+																				<div class="slide-inner pix-p-10">
+																					<div class="pix-slider-effects">
+																						<div class="card2 p-3 bg-white rounded-10 shadow-lg shadow-hover-lg fly-sm ">
+																							<div class="blockquote2 mb-0 card-body text-center">
+																								<div class="rounded-circle text-center mb-4 bg-dark-opacity-1 overflow-hidden d-inline-block pix-review-img">
+																									<img width="200" height="200" src="wp-content/uploads/2020/05/pixfort-logo.png" class="img-fluid pix-fit-cover"
+																									    alt="Homepage Software Elementor" loading="lazy" srcset="wp-content/uploads/2020/05/pixfort-logo.png 200w, wp-content/uploads/2020/05/pixfort-logo-150x150.png 150w, wp-content/uploads/2020/05/pixfort-logo-75x75.png 75w"
+																									    sizes="(max-width: 200px) 100vw, 200px" />
+																								</div>
+																								<p class=" text-body-default text-18 animate-in" style="" data-anim-type="fade-in-up" data-anim-delay="500">I am a web designer, you guys are very inspiring. I wish to see more work from you, maybe more freebies.
+																									Using pixfort products made my life a lot easier!</p>
+																								<div class="text-center animate-in" data-anim-type="fade-in-up"
+																								    data-anim-delay="600">
+																									<span class="bg-orange-light rounded-lg pb-1 mb-3 d-inline-block px-2 text-yellow">
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																									</span>
+																								</div>
+																								<div class="d-flex justify-content-center text-center">
+																									<div class="align-self-center">
+																										<h6 class="text-heading-default font-weight-bold mb-0 text-attachment-fix mx-3 animate-in" data-anim-type="fade-in-up"
+																										    data-anim-delay="700" style="">Carla Megan</h6>
+																										<span class="text-body-default  text-attachment-fix pb-0 mx-3 mb-0 animate-in"
+																										    style="" data-anim-type="fade-in-up" data-anim-delay="800">via pixfort.com</span>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="carousel-cell">
+																				<div class="slide-inner pix-p-10">
+																					<div class="pix-slider-effects">
+																						<div class="card2 p-3 bg-white rounded-10 shadow-lg shadow-hover-lg fly-sm ">
+																							<div class="blockquote2 mb-0 card-body text-center">
+																								<div class="rounded-circle text-center mb-4 bg-dark-opacity-1 overflow-hidden d-inline-block pix-review-img">
+																									<img width="200" height="200" src="wp-content/uploads/2020/05/google-logo.png" class="img-fluid pix-fit-cover"
+																									    alt="Homepage Software Elementor" loading="lazy" srcset="wp-content/uploads/2020/05/google-logo.png 200w, wp-content/uploads/2020/05/google-logo-150x150.png 150w, wp-content/uploads/2020/05/google-logo-75x75.png 75w"
+																									    sizes="(max-width: 200px) 100vw, 200px" />
+																								</div>
+																								<p class=" text-body-default text-18 animate-in" style="" data-anim-type="fade-in-up" data-anim-delay="500">I am a web designer, you guys are very inspiring. I wish to see more work from you, maybe more freebies.
+																									Using pixfort products made my life a lot easier!</p>
+																								<div class="text-center animate-in" data-anim-type="fade-in-up"
+																								    data-anim-delay="600">
+																									<span class="bg-orange-light rounded-lg pb-1 mb-3 d-inline-block px-2 text-yellow">
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star-empty.svg"
+																										    width="24" height="14" alt="" />
+																									</span>
+																								</div>
+																								<div class="d-flex justify-content-center text-center">
+																									<div class="align-self-center">
+																										<h6 class="text-heading-default font-weight-bold mb-0 text-attachment-fix mx-3 animate-in" data-anim-type="fade-in-up"
+																										    data-anim-delay="700" style="">Sara Smith</h6>
+																										<span class="text-body-default  text-attachment-fix pb-0 mx-3 mb-0 animate-in" style=""
+																										    data-anim-type="fade-in-up" data-anim-delay="800">via google.com</span>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="carousel-cell">
+																				<div class="slide-inner pix-p-10">
+																					<div class="pix-slider-effects">
+																						<div class="card2 p-3 bg-white rounded-10 shadow-lg shadow-hover-lg fly-sm ">
+																							<div class="blockquote2 mb-0 card-body text-center">
+																								<div class="rounded-circle text-center mb-4 bg-dark-opacity-1 overflow-hidden d-inline-block pix-review-img">
+																									<img width="200" height="200" src="wp-content/uploads/2020/05/twitter-logo.png" class="img-fluid pix-fit-cover"
+																									    alt="Homepage Software Elementor" loading="lazy" srcset="wp-content/uploads/2020/05/twitter-logo.png 200w, wp-content/uploads/2020/05/twitter-logo-150x150.png 150w, wp-content/uploads/2020/05/twitter-logo-75x75.png 75w"
+																									    sizes="(max-width: 200px) 100vw, 200px" />
+																								</div>
+																								<p class=" text-body-default text-18 animate-in" style="" data-anim-type="fade-in-up" data-anim-delay="500">I am a web designer, you guys are very inspiring. I wish to see more work from you, maybe more freebies.
+																									Using pixfort products made my life a lot easier!</p>
+																								<div class="text-center animate-in" data-anim-type="fade-in-up"
+																								    data-anim-delay="600">
+																									<span class="bg-orange-light rounded-lg pb-1 mb-3 d-inline-block px-2 text-yellow">
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																										<img loading="lazy" class="px-1" src="wp-content/plugins/pixfort-core/functions/images/star.svg"
+																										    width="24" height="14" alt="" />
+																									</span>
+																								</div>
+																								<div class="d-flex justify-content-center text-center">
+																									<div class="align-self-center">
+																										<h6 class="text-heading-default font-weight-bold mb-0 text-attachment-fix mx-3 animate-in" data-anim-type="fade-in-up"
+																										    data-anim-delay="700" style="">Lili</h6>
+																										<span class="text-body-default  text-attachment-fix pb-0 mx-3 mb-0 animate-in" style=""
+																										    data-anim-type="fade-in-up" data-anim-delay="800">via twitter.com</span>
+																									</div>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+											<section class="elementor-section elementor-top-section elementor-element elementor-element-a7ed1ea elementor-section-stretched elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+											    data-id="a7ed1ea" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+												<div class="elementor-container elementor-column-gap-default">
+													<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e8b2503" data-id="e8b2503"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-896bf18 elementor-widget elementor-widget-pix-badge" data-id="896bf18" data-element_type="widget"
+															    data-widget_type="pix-badge.default">
+																<div class="elementor-widget-container">
+																	<div class="pix-element-div w-100 text-center">
+																		<h6 class="pix-badge-element d-inline-block mr-1 ">
+																			<span class="badge font-weight-bold secondary-font bg-secondary  " style=" ">
+																				<span class="text-white" style="">Call to Action</span>
+																			</span>
+																		</h6>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-8fc53dd elementor-invisible elementor-widget elementor-widget-pix-heading"
+															    data-id="8fc53dd" data-element_type="widget" data-widget_type="pix-heading.default">
+																<div class="elementor-widget-container">
+																	<div class="pix-heading-el text-center ">
+																		<div>
+																			<div class="slide-in-container">
+																				<h2 class="text-heading-default font-weight-bold animate-in heading-text el-title_custom_color mb-12"
+																				    style="" data-anim-type="fade-in-up" data-anim-delay="200">Powerful integration to give you a boost!</h2>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-c716958 elementor-invisible elementor-widget elementor-widget-pix-text" data-id="c716958"
+															    data-element_type="widget" data-widget_type="pix-text.default">
+																<div class="elementor-widget-container">
+																	<div class="pix-el-text w-100 text-center ">
+																		<p class="text-20 m-0 text-body-default text-center ">
+																			<span class="text-body-default animate-in d-inline-block" data-anim-delay="1200" data-anim-type="fade-in">Seamless integrations to reduce your workload.</span>
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+											<section class="elementor-section elementor-top-section elementor-element elementor-element-0d35fde elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+											    data-id="0d35fde" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+												<div class="elementor-container elementor-column-gap-default">
+													<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a5652d4" data-id="a5652d4"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-e6208d1 elementor-widget elementor-widget-pix-clients" data-id="e6208d1"
+															    data-element_type="widget" data-widget_type="pix-clients.default">
+																<div class="elementor-widget-container">
+																	<div class="clients row  ">
+																		<div class="d-none d-md-block clearfix w-100 col-12"></div>
+																		<div class="col-md col-12 -5  text-center client2 d-inline-block2 d-inline-flex client shadow-hover-lg rounded-xl">
+																			<div class="py-3 d-inline-block align-self-center w-100" title="">
+																				<img loading="lazy" src="wp-content/uploads/2022/09/10081521.png" srcset="wp-content/uploads/2022/09/10081521.png 300w, wp-content/uploads/2022/09/10081521-150x150.png 150w, wp-content/uploads/2022/09/10081521-75x75.png 75w"
+																				    sizes="(max-width: 300px) 100vw, 300px" width="300" height="300" class="animate-in" alt="" data-anim-type=""
+																				    data-anim-delay="">
+																			</div>
+																		</div>
+																		<div class="col-md col-12 -5  text-center client2 d-inline-block2 d-inline-flex client shadow-hover-lg rounded-xl">
+																			<div class="py-3 d-inline-block align-self-center w-100" title="">
+																				<img loading="lazy" src="wp-content/uploads/2022/09/31-3.png" srcset="wp-content/uploads/2022/09/31-3.png 220w, wp-content/uploads/2022/09/31-3-150x150.png 150w, wp-content/uploads/2022/09/31-3-75x75.png 75w"
+																				    sizes="(max-width: 220px) 100vw, 220px" width="220" height="220" class="animate-in" alt="" data-anim-type=""
+																				    data-anim-delay="">
+																			</div>
+																		</div>
+																		<div class="col-md col-12 -5  text-center client2 d-inline-block2 d-inline-flex client shadow-hover-lg rounded-xl">
+																			<div class="py-3 d-inline-block align-self-center w-100" title="">
+																				<img loading="lazy" src="wp-content/uploads/2022/09/PrimaryLogo-TriColour-Tagline-1.png" srcset="wp-content/uploads/2022/09/PrimaryLogo-TriColour-Tagline-1-300x118.png 300w, wp-content/uploads/2022/09/PrimaryLogo-TriColour-Tagline-1-1024x402.png 1024w, wp-content/uploads/2022/09/PrimaryLogo-TriColour-Tagline-1-768x301.png 768w, wp-content/uploads/2022/09/PrimaryLogo-TriColour-Tagline-1-1536x603.png 1536w, wp-content/uploads/2022/09/PrimaryLogo-TriColour-Tagline-1.png 1700w"
+																				    sizes="(max-width: 1700px) 100vw, 1700px" width="1700" height="667" class="animate-in" alt="" data-anim-type=""
+																				    data-anim-delay="">
+																			</div>
+																		</div>
+																		<div class="col-md col-12 -5  text-center client2 d-inline-block2 d-inline-flex client shadow-hover-lg rounded-xl">
+																			<div class="py-3 d-inline-block align-self-center w-100" title="">
+																				<img loading="lazy" src="wp-content/uploads/2022/09/hotelogix-logo.jpg" srcset="wp-content/uploads/2022/09/hotelogix-logo-300x300.jpg 300w, wp-content/uploads/2022/09/hotelogix-logo-150x150.jpg 150w, wp-content/uploads/2022/09/hotelogix-logo.jpg 400w, wp-content/uploads/2022/09/hotelogix-logo-75x75.jpg 75w"
+																				    sizes="(max-width: 400px) 100vw, 400px" width="400" height="400" class="animate-in" alt="" data-anim-type=""
+																				    data-anim-delay="">
+																			</div>
+																		</div>
+																		<div class="col-md col-12 -5  text-center client2 d-inline-block2 d-inline-flex client shadow-hover-lg rounded-xl">
+																			<div class="py-3 d-inline-block align-self-center w-100" title="">
+																				<img loading="lazy" src="wp-content/uploads/2022/09/stayflexi-logo.png" srcset="wp-content/uploads/2022/09/stayflexi-logo-300x202.png 300w, wp-content/uploads/2022/09/stayflexi-logo-1024x689.png 1024w, wp-content/uploads/2022/09/stayflexi-logo-768x516.png 768w, wp-content/uploads/2022/09/stayflexi-logo-1536x1033.png 1536w, wp-content/uploads/2022/09/stayflexi-logo.png 2000w"
+																				    sizes="(max-width: 2000px) 100vw, 2000px" width="2000" height="1345" class="animate-in" alt="" data-anim-type=""
+																				    data-anim-delay="">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+											<section class="elementor-section elementor-top-section elementor-element elementor-element-5027215 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+											    data-id="5027215" data-element_type="section">
+												<div class="elementor-container elementor-column-gap-default">
+													<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-161ea7c" data-id="161ea7c"
+													    data-element_type="column">
+														<div class="elementor-widget-wrap elementor-element-populated">
+															<div class="elementor-element elementor-element-c873ed5 elementor-widget elementor-widget-pix-animated-heading" data-id="c873ed5"
+															    data-element_type="widget" data-widget_type="pix-animated-heading.default">
+																<div class="elementor-widget-container">
+																	<div class="text-left ">
+																		<div>
+																			<h2 class="pix-headline my-3  slide-inverse text-heading-default font-weight-bold  " style="">
+																				<span>Frequently asked questions </span>
+																				<span class="pix-words-wrapper"></span>
+																				<span></span>
+																			</h2>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-28a2583 elementor-widget elementor-widget-pix-heading" data-id="28a2583"
+															    data-element_type="widget" data-widget_type="pix-heading.default">
+																<div class="elementor-widget-container">
+																	<div class="pix-heading-el text-left ">
+																		<div>
+																			<div class="slide-in-container">
+																				<h6 class="text-gray-6 font-weight-bold heading-text el-title_custom_color mb-12" style="" data-anim-type=""
+																				    data-anim-delay="">Got questions for us? We are here to answer them all!</h6>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-element elementor-element-97e7348 elementor-widget elementor-widget-pix-accordion" data-id="97e7348"
+															    data-element_type="widget" data-widget_type="pix-accordion.default">
+																<div class="elementor-widget-container">
+																	<div class="accordion w-100 accordion-card bg-white2 rounded-lg2" id="accordion-6177322">
+																		<div class="card">
+																			<div class="card-header pix-mb-10 shadow-sm rounded-lg bg-white" id="headingpix-tab-7650849">
+																				<button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#collapsepix-tab-7650849" aria-expanded="true"
+																				    aria-controls="collapsepix-tab-7650849">
+																					<span class="font-weight-bold text-gray-6">Is Qricle a PMS system? </span>
+																				</button>
+																			</div>
+																			<div id="collapsepix-tab-7650849" class="collapse " aria-labelledby="headingpix-tab-7650849">
+																				<div class="card-body">
+																					<p>No, Qricle is not a PMS system. We build a layer above your existing PMS systems to effectively communicate
+																						with your guests and increase your revenue. So just like a PMS takes care of your property, we take
+																						care of your guests!</p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="card">
+																			<div class="card-header pix-mb-10 shadow-sm rounded-lg bg-white" id="headingpix-tab-1417616">
+																				<button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#collapsepix-tab-1417616" aria-expanded="true"
+																				    aria-controls="collapsepix-tab-1417616">
+																					<span class="font-weight-bold text-gray-6">Do guests have to download an application?</span>
+																				</button>
+																			</div>
+																			<div id="collapsepix-tab-1417616" class="collapse " aria-labelledby="headingpix-tab-1417616">
+																				<div class="card-body">
+																					<p>No there’s no need to download any application, it’s a web-application which can be easily accessed
+																						with scanning the QR code or through the Whatsapp link.</p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="card">
+																			<div class="card-header pix-mb-10 shadow-sm rounded-lg bg-white" id="headingpix-tab-2314674">
+																				<button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#collapsepix-tab-2314674" aria-expanded="true"
+																				    aria-controls="collapsepix-tab-2314674">
+																					<span class="font-weight-bold text-gray-6">Is Qricle a QR code ordering solution?</span>
+																				</button>
+																			</div>
+																			<div id="collapsepix-tab-2314674" class="collapse " aria-labelledby="headingpix-tab-2314674">
+																				<div class="card-body">
+																					<p>Well, that’s 10% of what we do but we power the entire guest journey from checkin to checkout and help
+																						hotels communicate effectively throughout this life-cycle.</p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="card">
+																			<div class="card-header pix-mb-10 shadow-sm rounded-lg bg-white" id="headingpix-tab-2225167">
+																				<button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#collapsepix-tab-2225167" aria-expanded="true"
+																				    aria-controls="collapsepix-tab-2225167">
+																					<span class="font-weight-bold text-gray-6">How is Qricle adding value to the hotel & the guest?</span>
+																				</button>
+																			</div>
+																			<div id="collapsepix-tab-2225167" class="collapse " aria-labelledby="headingpix-tab-2225167">
+																				<div class="card-body">
+																					<p>Qricle reduces the friction between the guests’ demands and the hotel staff empowering hotels to communicate
+																						effectively with all the in-house guests increasing their revenue, guest satisfaction & staff efficiency.</p>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="card">
+																			<div class="card-header pix-mb-10 shadow-sm rounded-lg bg-white" id="headingpix-tab-5054388">
+																				<button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#collapsepix-tab-5054388" aria-expanded="true"
+																				    aria-controls="collapsepix-tab-5054388">
+																					<span class="font-weight-bold text-gray-6">What else comes along with Qricle?</span>
+																				</button>
+																			</div>
+																			<div id="collapsepix-tab-5054388" class="collapse " aria-labelledby="headingpix-tab-5054388">
+																				<div class="card-body">
+																					<p>Along with the product itself, we will also assign an exclusive key account manager for your property
+																						that will work on better utilisation of our platform for your hotel. We also provide lifetime free
+																						updates, customised interface</p>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</section>
+										</div>
+									</div>
+									<!-- .entry-content -->
+								</article>
+								<!-- #post-3205 -->
+								<div class="clearfix"></div>
+							</main>
+							<!-- #main -->
+						</div>
+						<!-- #primary -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="pix-page-footer" class="site-footer2  bg-white my-0 py-0" data-sticky-bg="" data-sticky-color="">
+			<div class="container-fluid px-0 mx-0 my-0 py-0">
+				<div class="row my-0 py-0">
+					<div class="col-12 my-0 py-0">
+						<div data-elementor-type="wp-post" data-elementor-id="3323" class="elementor elementor-3323">
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-20a5958 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+							    data-id="20a5958" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-26aa6d8" data-id="26aa6d8"
+									    data-element_type="column">
+										<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-927b1b2 elementor-invisible elementor-widget elementor-widget-pix-img" data-id="927b1b2"
+											    data-element_type="widget" data-widget_type="pix-img.default">
+												<div class="elementor-widget-container">
+													<div class="d-inline-block " style="width:60%;">
+														<div class="animate-in w-100 d-inline-block" data-anim-type="fade-in-up" data-anim-delay="0">
+															<div class="pix-img-el    left d-inline-block  w-100 rounded-0">
+																<img loading="lazy" class="card-img2 pix-img-elem rounded-0  h-1002" style="width:60%;height:auto;" width="877"
+																    height="289" srcset="wp-content/uploads/2022/08/qrblk.png 877w, wp-content/uploads/2022/08/qrblk-300x99.png 300w, wp-content/uploads/2022/08/qrblk-768x253.png 768w"
+																    sizes="(max-width: 877px) 100vw, 877px" src="wp-content/uploads/2022/08/qrblk.png" alt="" />
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-0809ac9 elementor-invisible elementor-widget elementor-widget-pix-text" data-id="0809ac9"
+											    data-element_type="widget" data-widget_type="pix-text.default">
+												<div class="elementor-widget-container">
+													<div class="pix-el-text w-100 text-left ">
+														<p class=" m-0  text-left ">
+															<span class=" animate-in d-inline-block" data-anim-delay="200" data-anim-type="fade-in-up">Reinventing the way hotels interact with their guests.</span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-cf707ca elementor-widget__width-auto elementor-widget elementor-widget-pix-button"
+											    data-id="cf707ca" data-element_type="widget" data-widget_type="pix-button.default">
+												<div class="elementor-widget-container">
+													<span data-tf-popup="xrEvg4aD" data-tf-opacity="100" data-tf-size="87" data-tf-iframe-props="title=Website Lead Gen" data-tf-transitive-search-params data-tf-medium="snippet" class="btn m-0    pix-px-20 pix-py-10 text-body-default btn-white d-inline-block pix-hover-item     secondary-font btn-rounded animate-in btn-normal">
+														<i class="font-weight-bold pixicon-phone  pix-hover-left  mr-1"></i>
+														<span class="font-weight-bold ">Request early access</span>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-29b8a328 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile"
+									    data-id="29b8a328" data-element_type="column">
+										<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-c4af492 elementor-widget elementor-widget-pix-sliding-text" data-id="c4af492"
+											    data-element_type="widget" data-widget_type="pix-sliding-text.default">
+												<div class="elementor-widget-container">
+													<div id="sliding-text-109413063" class="mb-3 text-left ">
+														<h6 class="mb-32 pix-sliding-headline-2 animate-in font-weight-bold secondary-font " data-anim-type="pix-sliding-text"
+														    pix-anim-delay="500" data-class="secondary-font text-heading-default" style="">
+															<span class="slide-in-container ">
+																<span class="pix-sliding-item secondary-font text-heading-default" style="transition-delay: 0ms;">Company&#32;</span>
+															</span>
+														</h6>
+													</div>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-567abaa7 elementor-widget elementor-widget-pix-button" data-id="567abaa7"
+											    data-element_type="widget" data-widget_type="pix-button.default">
+												<div class="elementor-widget-container">
+													<a href="#" class="btn m-0     text-body-default btn-link text-gray-5 d-block w-100  no-padding text-left    animate-in btn-md"
+													    data-anim-type="fade-in" data-anim-delay="0">
+														<span class=" ">About pixfort</span>
+													</a>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-6b54c7c elementor-widget elementor-widget-pix-button" data-id="6b54c7c" data-element_type="widget"
+											    data-widget_type="pix-button.default">
+												<div class="elementor-widget-container">
+													<a href="#" class="btn m-0     text-body-default btn-link text-gray-5 d-block w-100  no-padding text-left    animate-in btn-md"
+													    data-anim-type="fade-in" data-anim-delay="0">
+														<span class=" ">The Team</span>
+													</a>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-044e880 elementor-widget elementor-widget-pix-button" data-id="044e880" data-element_type="widget"
+											    data-widget_type="pix-button.default">
+												<div class="elementor-widget-container">
+													<a href="#" class="btn m-0     text-body-default btn-link text-gray-5 d-block w-100  no-padding text-left    animate-in btn-md"
+													    data-anim-type="fade-in" data-anim-delay="0">
+														<span class=" ">Our Story</span>
+													</a>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-b4571f9 elementor-widget elementor-widget-pix-button" data-id="b4571f9" data-element_type="widget"
+											    data-widget_type="pix-button.default">
+												<div class="elementor-widget-container">
+													<a href="#" class="btn m-0     text-body-default btn-link text-gray-5 d-block w-100  no-padding text-left    animate-in btn-md"
+													    data-anim-type="fade-in" data-anim-delay="0">
+														<span class=" ">Press</span>
+													</a>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-0768d4f elementor-widget elementor-widget-pix-button" data-id="0768d4f" data-element_type="widget"
+											    data-widget_type="pix-button.default">
+												<div class="elementor-widget-container">
+													<a href="#" class="btn m-0     text-body-default btn-link text-gray-5 d-block w-100  no-padding text-left    animate-in btn-md"
+													    data-anim-type="fade-in" data-anim-delay="0">
+														<span class=" ">Assets</span>
+													</a>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-e01580a elementor-widget elementor-widget-pix-button" data-id="e01580a" data-element_type="widget"
+											    data-widget_type="pix-button.default">
+												<div class="elementor-widget-container">
+													<a href="#" class="btn m-0     text-body-default btn-link text-gray-5 d-block w-100  no-padding text-left    animate-in btn-md"
+													    data-anim-type="fade-in" data-anim-delay="0">
+														<span class=" ">Social Media</span>
+													</a>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-32eb2cc elementor-widget elementor-widget-pix-button" data-id="32eb2cc" data-element_type="widget"
+											    data-widget_type="pix-button.default">
+												<div class="elementor-widget-container">
+													<a href="#" class="btn m-0     text-body-default btn-link text-gray-5 d-block w-100  no-padding text-left    animate-in btn-md"
+													    data-anim-type="fade-in" data-anim-delay="0">
+														<span class=" ">Sales</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-d5a3e95 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile"
+									    data-id="d5a3e95" data-element_type="column">
+										<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-d2510e9 elementor-widget elementor-widget-pix-sliding-text" data-id="d2510e9"
+											    data-element_type="widget" data-widget_type="pix-sliding-text.default">
+												<div class="elementor-widget-container">
+													<div id="sliding-text-66334718" class="mb-3 text-left ">
+														<h6 class="mb-32 pix-sliding-headline-2 animate-in font-weight-bold secondary-font " data-anim-type="pix-sliding-text"
+														    pix-anim-delay="500" data-class="secondary-font text-heading-default" style="">
+															<span class="slide-in-container ">
+																<span class="pix-sliding-item secondary-font text-heading-default" style="transition-delay: 0ms;">Our&#32;</span>
+															</span>
+															<span class="slide-in-container ">
+																<span class="pix-sliding-item secondary-font text-heading-default" style="transition-delay: 150ms;">Products&#32;</span>
+															</span>
+														</h6>
+													</div>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-9190972 elementor-widget elementor-widget-pix-button" data-id="9190972" data-element_type="widget"
+											    data-widget_type="pix-button.default">
+												<div class="elementor-widget-container">
+													<a href="#" class="btn m-0     text-body-default btn-link text-gray-5 d-block w-100  no-padding text-left    animate-in btn-md"
+													    data-anim-type="fade-in" data-anim-delay="0">
+														<span class=" ">pixfort Builder</span>
+													</a>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-31185ee elementor-widget elementor-widget-pix-button" data-id="31185ee" data-element_type="widget"
+											    data-widget_type="pix-button.default">
+												<div class="elementor-widget-container">
+													<a href="#" class="btn m-0     text-body-default btn-link text-gray-5 d-block w-100  no-padding text-left    animate-in btn-md"
+													    data-anim-type="fade-in" data-anim-delay="0">
+														<span class=" ">Landing Pages</span>
+													</a>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-7f3be7b elementor-widget elementor-widget-pix-button" data-id="7f3be7b" data-element_type="widget"
+											    data-widget_type="pix-button.default">
+												<div class="elementor-widget-container">
+													<a href="#" class="btn m-0     text-body-default btn-link text-gray-5 d-block w-100  no-padding text-left    animate-in btn-md"
+													    data-anim-type="fade-in" data-anim-delay="0">
+														<span class=" ">Product Support</span>
+													</a>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-d4ec6f3 elementor-widget elementor-widget-pix-button" data-id="d4ec6f3" data-element_type="widget"
+											    data-widget_type="pix-button.default">
+												<div class="elementor-widget-container">
+													<a href="#" class="btn m-0     text-body-default btn-link text-gray-5 d-block w-100  no-padding text-left    animate-in btn-md"
+													    data-anim-type="fade-in" data-anim-delay="0">
+														<span class=" ">Marketing</span>
+													</a>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-d8a58ae elementor-widget elementor-widget-pix-button" data-id="d8a58ae" data-element_type="widget"
+											    data-widget_type="pix-button.default">
+												<div class="elementor-widget-container">
+													<a href="#" class="btn m-0     text-body-default btn-link text-gray-5 d-block w-100  no-padding text-left    animate-in btn-md"
+													    data-anim-type="fade-in" data-anim-delay="0">
+														<span class=" ">Themes</span>
+													</a>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-1f4e042 elementor-widget elementor-widget-pix-button" data-id="1f4e042" data-element_type="widget"
+											    data-widget_type="pix-button.default">
+												<div class="elementor-widget-container">
+													<a href="#" class="btn m-0     text-body-default btn-link text-gray-5 d-block w-100  no-padding text-left    animate-in btn-md"
+													    data-anim-type="fade-in" data-anim-delay="0">
+														<span class=" ">Plugins and Addons</span>
+													</a>
+												</div>
+											</div>
+											<div class="elementor-element elementor-element-6f91115 elementor-widget elementor-widget-pix-button" data-id="6f91115" data-element_type="widget"
+											    data-widget_type="pix-button.default">
+												<div class="elementor-widget-container">
+													<a href="#" class="btn m-0     text-body-default btn-link text-gray-5 d-block w-100  no-padding text-left    animate-in btn-md"
+													    data-anim-type="fade-in" data-anim-delay="0">
+														<span class=" ">Knowledge Base</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7741940" data-id="7741940"
+									    data-element_type="column">
+										<div class="elementor-widget-wrap">
+										</div>
+									</div>
+								</div>
+							</section>
+							<section class="elementor-section elementor-top-section elementor-element elementor-element-67d4b292 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+							    data-id="67d4b292" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+								<div class="elementor-container elementor-column-gap-default">
+									<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2a9fe3ff" data-id="2a9fe3ff"
+									    data-element_type="column">
+										<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-8c79fe7 elementor-invisible elementor-widget elementor-widget-pix-animated-heading"
+											    data-id="8c79fe7" data-element_type="widget" data-widget_type="pix-animated-heading.default">
+												<div class="elementor-widget-container">
+													<div class="text-center ">
+														<div>
+															<p class="pix-headline my-3  rotate-1 text-gray-5    animate-in" style="" data-anim-type="fade-in" data-anim-delay="500">
+																<span>Copyright © Qricle. </span>
+																<span class="pix-words-wrapper">
+																	<span class="is-visible text-red">
+																		<strong>Built</strong>
+																	</span>
+																	<span class="text-yellow">
+																		<strong>Made</strong>
+																	</span>
+																</span>
+																<span> in India.</span>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- #page -->
+	<script>
+		var global = global || window;
+	</script>
+	<script>
+		window.RS_MODULES = window.RS_MODULES || {};
+		window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+		window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+		window.RS_MODULES.defered = true;
+		window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+		window.RS_MODULES.type = 'compiled';
+	</script>
+	<svg class="shape-overlays d-none" viewBox="0 0 100 100" preserveAspectRatio="none">
+		<defs>
+			<linearGradient id="search-overlay-color-1" x1="0%" y1="0%" x2="100%" y2="0%">
+				<stop offset="0%" stop-color="#5f02ff" />
+				<stop offset="100%" stop-color="#ff5e89" />
+			</linearGradient>
+			<linearGradient id="search-overlay-color-2" x1="0%" y1="0%" x2="100%" y2="0%">
+				<stop offset="0%" stop-color="#037ef3" />
+				<stop offset="100%" stop-color="#02e3ef" />
+			</linearGradient>
+			<linearGradient id="search-overlay-color-3" x1="0%" y1="0%" x2="100%" y2="0%">
+				<stop offset="0%" stop-color="#ff9900" />
+				<stop offset="100%" stop-color="#ff6c5f" />
+			</linearGradient>
+			<linearGradient id="search-overlay-color-4" x1="0%" y1="0%" x2="100%" y2="0%">
+				<stop offset="0%" stop-color="#1e73be" />
+				<stop offset="100%" stop-color="#00897e" />
+			</linearGradient>
+		</defs>
+		<path class="shape-overlays__path" d="" fill="url(#search-overlay-color-3)"></path>
+		<path class="shape-overlays__path" d="" fill="url(#search-overlay-color-2)"></path>
+		<path class="shape-overlays__path" d="" fill="url(#search-overlay-color-1)"></path>
+	</svg>
+	<div class="pix-overlay d-none">
+		<div class="">
+			<div class="pix-search ">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="col-12 col-md-12">
+							<div class="pix-overlay-item pix-overlay-item--style-6">
+								<a href="#" class="pix-search-close">
+									<span class="screen-reader-text sr-only">Close</span>
+									<i class="text-white pixicon-close-circle"></i>
+								</a>
+								<div class="pb-0">
+									<div class="search-title h1 heading-font display-2 text-gradient-primary2 text-white font-weight-bold">Search</div>
+								</div>
+							</div>
+							<div class="slide-in-container pb-2 pix-overlay-item pix-overlay-item--style-6">
+								<p class="text-gray-3s text-20 mb-2 secondary-font search-note text-light-opacity-5">Hit enter to search or ESC to close</p>
+							</div>
+							<div class="search-bar pix-overlay-item pix-overlay-item--style-6">
+								<div class="search-content">
+									<form class="pix-search-form" method="get" action="index.html">
+										<div class="media pix-ajax-search-container">
+											<button class="pix-search-submit align-self-center" aria-label="search" type="submit">
+												<i class="pixicon-search"></i>
+											</button>
+											<div class="media-body">
+												<label class="w-100 m-0">
+													<span class="screen-reader-text sr-only">Search for:</span>
+													<input value="" name="s" id="s" class="pix-search-input pix-ajax-search" type="search" autocomplete="off" placeholder="Search"
+													    data-search-link="https://www.qricle.com/wp-admin/admin-ajax.php?action=pix_ajax_searcht&#038;nonce=2ee0cbb175"
+													/>
+												</label>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="shadow shadow-hover rounded-circle fly bg-gray-2 back_to_top default" title="Go to top">
+		<i class="pixicon-angle-up"></i>
+	</a>
+	<div class="pix-cookie-banner position-fixed">
+		<div class="pix-cookie-inner pix-px-10 pix-py-5 rounded-xl shadow-lg pix-mb-20 bg-white fly-sm shadow-hover-lg animate-in"
+		    data-anim-type="fade-in-up" data-anim-delay="1000">
+			<div class="d-sm-flex align-items-center">
+				<img class="pix-cookie-img mr-1 mr-sm-2" width="30" height="30" src="wp-content/themes/essentials/inc/images/cookie.png"
+				    alt="cookie" />
+				<span class="text-body-default font-weight-bold text-sm">
+					By using this website, you agree to our
+					<a target="_blank" href="" class="ml-12 text-heading-default font-weight-bold text-sm pix-popup-link"
+					    data-popup-link="https://www.qricle.com/wp-admin/admin-ajax.php?action=pix_popup_content&amp;id=3357&amp;nonce=7ad1a4c1d3"
+					    data-popup-id="3357">
+						cookie policy. </a>
+				</span>
+				<a href="#" data-link="https://www.qricle.com/wp-admin/admin-ajax.php?action=pix_close_cookies&#038;nonce=3348827b8a" class="pix-cookies-close text-20 line-height-0 ml-2 d-inline-block text-gray-4">
+					<span class="screen-reader-text sr-only">Close</span>
+					<i class="align-self-center pixicon-close-circle"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="d-flex">
+		<svg width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg">
+			<defs>
+				<linearGradient id="svg-gradient-primary">
+					<stop offset="0%" stop-color="#5f02ff" />
+					<stop offset="100%" stop-color="#ff5e89" />
+				</linearGradient>
+			</defs>
+		</svg>
+	</div>
+	<style id='pix-highlighted-text-handle-inline-css' type='text/css'>
+		.highlighted-text-103827596-1.pix-highlight-bg {
+			background-image: linear-gradient(#0C0096, #0C0096) !important;
+		}
+
+		.highlighted-text-103827596-3.pix-highlight-bg {
+			background-image: linear-gradient(#FF8B12, #FF8B12) !important;
+		}
+	</style>
+	<link rel='stylesheet' id='elementor-post-3323-css' href='wp-content/uploads/elementor/css/post-3323.css' type='text/css'
+	    media='all' />
+	<style id='pix-sliding-text-handle-inline-css' type='text/css'>
+		#sliding-text-109413063 .pix-sliding-headline-2 {
+			font-size: h1 !important;
+		}
+
+		#sliding-text-66334718 .pix-sliding-headline-2 {
+			font-size: h1 !important;
+		}
+	</style>
+	<link rel='stylesheet' id='pixfort-likes-css' href='wp-content/plugins/pixfort-likes/styles/pixfort-likes.css' type='text/css'
+	    media='all' />
+	<link rel='stylesheet' id='pixfort-likes-odometer-css' href='wp-content/plugins/pixfort-likes/styles/odometer-theme-default.css'
+	    type='text/css' media='all' />
+	<link rel='stylesheet' id='wpb-google-font-primary-css' href='//fonts.googleapis.com/css?family=Manrope%3A400%2C700&#038;display=swap&#038;ver=5.9.5'
+	    type='text/css' media='all' />
+	<link rel='stylesheet' id='rs-plugin-settings-css' href='wp-content/plugins/revslider/public/assets/css/rs6.css' type='text/css'
+	    media='all' />
+	<style id='rs-plugin-settings-inline-css' type='text/css'>
+		#rs-demo-id {}
+	</style>
+	<script type='text/javascript' src='wp-content/plugins/pixfort-core/functions/elementor/js/global-dividers.js' id='pix-global-dividers-handle-js'></script>
+	<script type='text/javascript' src='wp-includes/js/dist/vendor/regenerator-runtime.min.js' id='regenerator-runtime-js'></script>
+	<script type='text/javascript' src='wp-includes/js/dist/vendor/wp-polyfill.min.js' id='wp-polyfill-js'></script>
+	<script type='text/javascript' id='contact-form-7-js-extra'>
+		/* <![CDATA[ */
+		var wpcf7 = {
+			"api": {
+				"root": "https:\/\/www.qricle.com\/wp-json\/",
+				"namespace": "contact-form-7\/v1"
+			}
+		};
+		/* ]]> */
+	</script>
+	<script type='text/javascript' src='wp-content/plugins/contact-form-7/includes/js/index.js' id='contact-form-7-js'></script>
+	<script type='text/javascript' src='wp-content/plugins/revslider/public/assets/js/rbtools.min.js' defer async id='tp-tools-js'></script>
+	<script type='text/javascript' src='wp-content/plugins/revslider/public/assets/js/rs6.min.js' defer async id='revmin-js'></script>
+	<script type='text/javascript' src='wp-content/themes/essentials/js/build/popper.min.js' id='pix-popper-js-js'></script>
+	<script type='text/javascript' src='wp-content/themes/essentials/js/build/bootstrap.min.js' id='pix-bootstrap-js-js'></script>
+	<script type='text/javascript' src='wp-content/themes/essentials/js/build/bootstrap-select.min.js' id='pix-bootstrap-select-js-js'></script>
+	<script type='text/javascript' src='wp-content/themes/essentials/js/build/flickity.pkgd.min.js' id='pix-flickity-js-js'></script>
+	<script type='text/javascript' src='wp-includes/js/jquery/ui/core.min.js' id='jquery-ui-core-js'></script>
+	<script type='text/javascript' id='pix-main-essentials-js-extra'>
+		/* <![CDATA[ */
+		var pixfort_main_object = {
+			"name": "mainVals",
+			"dataPopupBase": "index.html",
+			"dataPixOverlay": "pix-overlay-6",
+			"dataPopupCheckLink": "index.html",
+			"datacookiesId": "Cookies-1",
+			"lightboxUrl": "https:\/\/www.qricle.com\/wp-content\/themes\/essentials\/js\/build\/jquery.fancybox.min.js",
+			"isotopeUrl": "https:\/\/www.qricle.com\/wp-content\/themes\/essentials\/js\/build\/isotope.pkgd.min.js",
+			"searchUrl": "https:\/\/www.qricle.com\/wp-content\/themes\/essentials\/js\/build\/bootstrap-autocomplete.min.js"
+		};
+		/* ]]> */
+	</script>
+	<script type='text/javascript' src='wp-content/themes/essentials/js/essentials.min.js' id='pix-main-essentials-js'></script>
+	<script type='text/javascript' src='wp-content/plugins/pixfort-likes/scripts/odometer.min.js' id='pixfort-likes-digit-js'></script>
+	<script type='text/javascript' id='pixfort-likes-js-extra'>
+		/* <![CDATA[ */
+		var pixfort_likes = {
+			"ajaxurl": "index.html"
+		};
+		/* ]]> */
+	</script>
+	<script type='text/javascript' src='wp-content/plugins/pixfort-likes/scripts/pixfort-likes.js' id='pixfort-likes-js'></script>
+	<script type='text/javascript' src='wp-content/plugins/elementor/assets/js/webpack.runtime.min.js' id='elementor-webpack-runtime-js'></script>
+	<script type='text/javascript' src='wp-content/plugins/elementor/assets/js/frontend-modules.min.js' id='elementor-frontend-modules-js'></script>
+	<script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js' id='elementor-waypoints-js'></script>
+	<script type='text/javascript' id='elementor-frontend-js-before'>
+		var elementorFrontendConfig = {
+			"environmentMode": {
+				"edit": false,
+				"wpPreview": false,
+				"isScriptDebug": false
+			},
+			"i18n": {
+				"shareOnFacebook": "Share on Facebook",
+				"shareOnTwitter": "Share on Twitter",
+				"pinIt": "Pin it",
+				"download": "Download",
+				"downloadImage": "Download image",
+				"fullscreen": "Fullscreen",
+				"zoom": "Zoom",
+				"share": "Share",
+				"playVideo": "Play Video",
+				"previous": "Previous",
+				"next": "Next",
+				"close": "Close"
+			},
+			"is_rtl": false,
+			"breakpoints": {
+				"xs": 0,
+				"sm": 480,
+				"md": 768,
+				"lg": 1025,
+				"xl": 1440,
+				"xxl": 1600
+			},
+			"responsive": {
+				"breakpoints": {
+					"mobile": {
+						"label": "Mobile",
+						"value": 767,
+						"default_value": 767,
+						"direction": "max",
+						"is_enabled": true
+					},
+					"mobile_extra": {
+						"label": "Mobile Extra",
+						"value": 880,
+						"default_value": 880,
+						"direction": "max",
+						"is_enabled": false
+					},
+					"tablet": {
+						"label": "Tablet",
+						"value": 1024,
+						"default_value": 1024,
+						"direction": "max",
+						"is_enabled": true
+					},
+					"tablet_extra": {
+						"label": "Tablet Extra",
+						"value": 1200,
+						"default_value": 1200,
+						"direction": "max",
+						"is_enabled": false
+					},
+					"laptop": {
+						"label": "Laptop",
+						"value": 1366,
+						"default_value": 1366,
+						"direction": "max",
+						"is_enabled": false
+					},
+					"widescreen": {
+						"label": "Widescreen",
+						"value": 2400,
+						"default_value": 2400,
+						"direction": "min",
+						"is_enabled": false
+					}
+				}
+			},
+			"version": "3.7.3",
+			"is_static": false,
+			"experimentalFeatures": {
+				"e_dom_optimization": true,
+				"e_optimized_assets_loading": true,
+				"e_optimized_css_loading": true,
+				"a11y_improvements": true,
+				"additional_custom_breakpoints": true,
+				"e_import_export": true,
+				"e_hidden_wordpress_widgets": true,
+				"landing-pages": true,
+				"elements-color-picker": true,
+				"favorite-widgets": true,
+				"admin-top-bar": true
+			},
+			"urls": {
+				"assets": "https:\/\/www.qricle.com\/wp-content\/plugins\/elementor\/assets\/"
+			},
+			"settings": {
+				"page": [],
+				"editorPreferences": []
+			},
+			"kit": {
+				"active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+				"global_image_lightbox": "yes",
+				"lightbox_enable_counter": "yes",
+				"lightbox_enable_fullscreen": "yes",
+				"lightbox_enable_zoom": "yes",
+				"lightbox_enable_share": "yes",
+				"lightbox_title_src": "title",
+				"lightbox_description_src": "description"
+			},
+			"post": {
+				"id": 3205,
+				"title": "Qricle%20%E2%80%93%20Guest%20Interactions%20Management%20System",
+				"excerpt": "",
+				"featuredImage": false
+			}
+		};
+	</script>
+	<script type='text/javascript' src='wp-content/plugins/elementor/assets/js/frontend.min.js' id='elementor-frontend-js'></script>
+
+</html>
